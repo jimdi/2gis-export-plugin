@@ -5,7 +5,7 @@
 - Search organization in wildcard mode
 - Coordinates for current point on map
 
-Для сборки используется ATL и WTL
+Р”Р»СЏ СЃР±РѕСЂРєРё РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ ATL Рё WTL
 https://sourceforge.net/projects/wtl/
 
-GrymCore включён, импорт из COM объекта не нужен более, можно собирать где угодно
+GrymCore РІРєР»СЋС‡С‘РЅ, РёРјРїРѕСЂС‚ РёР· COM РѕР±СЉРµРєС‚Р° РЅРµ РЅСѓР¶РµРЅ Р±РѕР»РµРµ, РјРѕР¶РЅРѕ СЃРѕР±РёСЂР°С‚СЊ РіРґРµ СѓРіРѕРґРЅРѕ
