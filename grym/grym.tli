@@ -1,0 +1,4640 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.23506.0 (b2750bea).
+//
+// d:\jim\2gis-export-plugin\build\release\export\grym.tli
+//
+// Wrapper implementations for Win32 type library 7AA02C95-0B4A-43aa-92D8-BA40511A7F3F
+// compiler-generated file created 02/12/16 at 12:11:17 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IDevPoint wrapper method implementations
+//
+
+inline long IDevPoint::GetX ( ) {
+    long _result = 0;
+    HRESULT _hr = get_X(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IDevPoint::PutX ( long pVal ) {
+    HRESULT _hr = put_X(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IDevPoint::GetY ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Y(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IDevPoint::PutY ( long pVal ) {
+    HRESULT _hr = put_Y(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IDevPoint::Set ( long nX, long nY ) {
+    HRESULT _hr = raw_Set(nX, nY);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IDevRect wrapper method implementations
+//
+
+inline IDevPointPtr IDevRect::GetMin ( ) {
+    struct IDevPoint * _result = 0;
+    HRESULT _hr = get_Min(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevPointPtr(_result, false);
+}
+
+inline IDevPointPtr IDevRect::GetMax ( ) {
+    struct IDevPoint * _result = 0;
+    HRESULT _hr = get_Max(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevPointPtr(_result, false);
+}
+
+inline long IDevRect::GetMinX ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MinX(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IDevRect::PutMinX ( long pVal ) {
+    HRESULT _hr = put_MinX(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IDevRect::GetMinY ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MinY(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IDevRect::PutMinY ( long pVal ) {
+    HRESULT _hr = put_MinY(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IDevRect::GetMaxX ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MaxX(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IDevRect::PutMaxX ( long pVal ) {
+    HRESULT _hr = put_MaxX(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IDevRect::GetMaxY ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MaxY(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IDevRect::PutMaxY ( long pVal ) {
+    HRESULT _hr = put_MaxY(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IDevRect::GetWidth ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Width(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IDevRect::GetHeight ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Height(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IDevRect::Set ( long nMinX, long nMinY, long nMaxX, long nMaxY ) {
+    HRESULT _hr = raw_Set(nMinX, nMinY, nMaxX, nMaxY);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IHitTestFill wrapper method implementations
+//
+
+inline HRESULT IHitTestFill::SetImage ( IUnknown * pIcon ) {
+    HRESULT _hr = raw_SetImage(pIcon);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IHitTestFill::SetCaption ( _bstr_t bsCaption ) {
+    HRESULT _hr = raw_SetCaption(bsCaption);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IHitTestFill::SetDescription ( _bstr_t bsDescription ) {
+    HRESULT _hr = raw_SetDescription(bsDescription);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IHitTestFill::SetRect ( struct IDevRect * pRect ) {
+    HRESULT _hr = raw_SetRect(pRect);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IDevSize wrapper method implementations
+//
+
+inline long IDevSize::GetWidth ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Width(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IDevSize::PutWidth ( long pVal ) {
+    HRESULT _hr = put_Width(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IDevSize::GetHeight ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Height(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IDevSize::PutHeight ( long pVal ) {
+    HRESULT _hr = put_Height(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IDevSize::Set ( long nWidth, long nHeight ) {
+    HRESULT _hr = raw_Set(nWidth, nHeight);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IRaster wrapper method implementations
+//
+
+inline IDevSizePtr IRaster::GetSize ( ) {
+    struct IDevSize * _result = 0;
+    HRESULT _hr = get_Size(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevSizePtr(_result, false);
+}
+
+inline long IRaster::GetBitPerPixel ( ) {
+    long _result = 0;
+    HRESULT _hr = get_BitPerPixel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IRasterPtr IRaster::Clone ( ) {
+    struct IRaster * _result = 0;
+    HRESULT _hr = raw_Clone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterPtr(_result, false);
+}
+
+//
+// interface IRasterSet wrapper method implementations
+//
+
+inline IRasterPtr IRasterSet::GetRaster ( _bstr_t bsTag ) {
+    struct IRaster * _result = 0;
+    HRESULT _hr = get_Raster(bsTag, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterPtr(_result, false);
+}
+
+//
+// interface IRasterSetEdit wrapper method implementations
+//
+
+inline HRESULT IRasterSetEdit::LockEditItf ( ) {
+    HRESULT _hr = raw_LockEditItf();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IRasterSetEdit::Add ( _bstr_t bsTag, struct IRaster * pRaster ) {
+    HRESULT _hr = raw_Add(bsTag, pRaster);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IRasterSetEdit::Remove ( _bstr_t bsTag ) {
+    HRESULT _hr = raw_Remove(bsTag);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IRasterBag wrapper method implementations
+//
+
+inline long IRasterBag::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IRasterPtr IRasterBag::GetItem ( long nIndex ) {
+    struct IRaster * _result = 0;
+    HRESULT _hr = get_Item(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterPtr(_result, false);
+}
+
+inline HRESULT IRasterBag::Add ( struct IRaster * newVal ) {
+    HRESULT _hr = raw_Add(newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IActiveElement wrapper method implementations
+//
+
+inline VARIANT_BOOL IActiveElement::ProcessMessage ( long nMessage, long wParam, long lParam ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_ProcessMessage(nMessage, wParam, lParam, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IPropertySet wrapper method implementations
+//
+
+inline _variant_t IPropertySet::GetProperty ( _bstr_t bsPropertyName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Property(bsPropertyName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IPropertySet::PutProperty ( _bstr_t bsPropertyName, const _variant_t & pVal ) {
+    HRESULT _hr = put_Property(bsPropertyName, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IObjectCustomization wrapper method implementations
+//
+
+inline HRESULT IObjectCustomization::RegisterCustomizer ( IUnknown * pVal ) {
+    HRESULT _hr = raw_RegisterCustomizer(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IObjectCustomization::UnregisterCustomizer ( IUnknown * pVal ) {
+    HRESULT _hr = raw_UnregisterCustomizer(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMapPoint wrapper method implementations
+//
+
+inline double IMapPoint::GetX ( ) {
+    double _result = 0;
+    HRESULT _hr = get_X(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMapPoint::PutX ( double pVal ) {
+    HRESULT _hr = put_X(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IMapPoint::GetY ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Y(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMapPoint::PutY ( double pVal ) {
+    HRESULT _hr = put_Y(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IMapPoint::Set ( double nX, double nY ) {
+    HRESULT _hr = raw_Set(nX, nY);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMapDevice wrapper method implementations
+//
+
+inline enum DeviceType IMapDevice::GetType ( ) {
+    enum DeviceType _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline OLE_HANDLE IMapDevice::GetSafeDC ( ) {
+    OLE_HANDLE _result;
+    HRESULT _hr = get_SafeDC(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IDevRectPtr IMapDevice::GetDeviceRect ( ) {
+    struct IDevRect * _result = 0;
+    HRESULT _hr = get_DeviceRect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevRectPtr(_result, false);
+}
+
+inline long IMapDevice::GetScale ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Scale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IDevPointPtr IMapDevice::MapToDevice ( struct IMapPoint * pPtMap ) {
+    struct IDevPoint * _result = 0;
+    HRESULT _hr = raw_MapToDevice(pPtMap, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevPointPtr(_result, false);
+}
+
+inline IMapPointPtr IMapDevice::DeviceToMap ( struct IDevPoint * pPtDev ) {
+    struct IMapPoint * _result = 0;
+    HRESULT _hr = raw_DeviceToMap(pPtDev, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPointPtr(_result, false);
+}
+
+inline long IMapDevice::MapToDeviceMeasure ( double nMapLength ) {
+    long _result = 0;
+    HRESULT _hr = raw_MapToDeviceMeasure(nMapLength, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double IMapDevice::DeviceToMapMeasure ( long nDevLength ) {
+    double _result = 0;
+    HRESULT _hr = raw_DeviceToMapMeasure(nDevLength, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IMapDeviceClip wrapper method implementations
+//
+
+inline IDevPointPtr IMapDeviceClip::MapToDeviceCheck ( struct IMapPoint * pPtMap ) {
+    struct IDevPoint * _result = 0;
+    HRESULT _hr = raw_MapToDeviceCheck(pPtMap, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevPointPtr(_result, false);
+}
+
+inline _variant_t IMapDeviceClip::MapSegmentToDeviceClip ( const _variant_t & vtMapPoints, VARIANT_BOOL ring ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_MapSegmentToDeviceClip(vtMapPoints, ring, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface IMapRect wrapper method implementations
+//
+
+inline IMapPointPtr IMapRect::GetMin ( ) {
+    struct IMapPoint * _result = 0;
+    HRESULT _hr = get_Min(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPointPtr(_result, false);
+}
+
+inline IMapPointPtr IMapRect::GetMax ( ) {
+    struct IMapPoint * _result = 0;
+    HRESULT _hr = get_Max(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPointPtr(_result, false);
+}
+
+inline double IMapRect::GetMinX ( ) {
+    double _result = 0;
+    HRESULT _hr = get_MinX(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMapRect::PutMinX ( double pVal ) {
+    HRESULT _hr = put_MinX(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IMapRect::GetMinY ( ) {
+    double _result = 0;
+    HRESULT _hr = get_MinY(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMapRect::PutMinY ( double pVal ) {
+    HRESULT _hr = put_MinY(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IMapRect::GetMaxX ( ) {
+    double _result = 0;
+    HRESULT _hr = get_MaxX(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMapRect::PutMaxX ( double pVal ) {
+    HRESULT _hr = put_MaxX(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IMapRect::GetMaxY ( ) {
+    double _result = 0;
+    HRESULT _hr = get_MaxY(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMapRect::PutMaxY ( double pVal ) {
+    HRESULT _hr = put_MaxY(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IMapRect::GetWidth ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Width(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double IMapRect::GetHeight ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Height(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IMapRect::Set ( double nMinX, double nMinY, double nMaxX, double nMaxY ) {
+    HRESULT _hr = raw_Set(nMinX, nMinY, nMaxX, nMaxY);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IControlSet wrapper method implementations
+//
+
+inline HRESULT IControlSet::AddControl ( IUnknown * pCtl ) {
+    HRESULT _hr = raw_AddControl(pCtl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControlSet::RemoveControl ( IUnknown * pCtl ) {
+    HRESULT _hr = raw_RemoveControl(pCtl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IContextBase wrapper method implementations
+//
+
+inline _variant_t IContextBase::GetCustomInfo ( _bstr_t bsKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_CustomInfo(bsKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IContextBase::PutCustomInfo ( _bstr_t bsKey, const _variant_t & pVal ) {
+    HRESULT _hr = put_CustomInfo(bsKey, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ISymbol wrapper method implementations
+//
+
+inline HRESULT ISymbol::Draw ( struct IMapDevice * pDevice, const _variant_t & vtPoints, const _variant_t & vtParts, const _variant_t & vtAdditionalData ) {
+    HRESULT _hr = raw_Draw(pDevice, vtPoints, vtParts, vtAdditionalData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISymbol::DrawSample ( OLE_HANDLE hDC, struct IDevRect * pDevRect ) {
+    HRESULT _hr = raw_DrawSample(hDC, pDevRect);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ISymbolPtr ISymbol::CloneHighlighted ( OLE_COLOR clrHightlight ) {
+    struct ISymbol * _result = 0;
+    HRESULT _hr = raw_CloneHighlighted(clrHightlight, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISymbolPtr(_result, false);
+}
+
+inline VARIANT_BOOL ISymbol::IsPointInside ( struct IMapDevice * pDevice, struct IMapPoint * pPos, const _variant_t & vtPoints, const _variant_t & vtParts, const _variant_t & vtAdditionalData ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsPointInside(pDevice, pPos, vtPoints, vtParts, vtAdditionalData, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IFillSymbol wrapper method implementations
+//
+
+inline ILineSymbolPtr IFillSymbol::GetOutline ( ) {
+    struct ILineSymbol * _result = 0;
+    HRESULT _hr = get_Outline(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ILineSymbolPtr(_result, false);
+}
+
+inline void IFillSymbol::PutRefOutline ( struct ILineSymbol * ppSymbol ) {
+    HRESULT _hr = putref_Outline(ppSymbol);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IMarkerSymbol wrapper method implementations
+//
+
+inline long IMarkerSymbol::GetAngle ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Angle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMarkerSymbol::PutAngle ( long pVal ) {
+    HRESULT _hr = put_Angle(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDevSizePtr IMarkerSymbol::GetMarkerSize ( struct IMapDevice * pDevice ) {
+    struct IDevSize * _result = 0;
+    HRESULT _hr = raw_GetMarkerSize(pDevice, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevSizePtr(_result, false);
+}
+
+inline double IMarkerSymbol::GetHotSpotX ( ) {
+    double _result = 0;
+    HRESULT _hr = get_HotSpotX(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double IMarkerSymbol::GetHotSpotY ( ) {
+    double _result = 0;
+    HRESULT _hr = get_HotSpotY(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IMarkerSymbol::SetHotSpot ( double newX, double newY ) {
+    HRESULT _hr = raw_SetHotSpot(newX, newY);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISimpleLineSymbol wrapper method implementations
+//
+
+inline enum SimpleLineStyle ISimpleLineSymbol::GetStyle ( ) {
+    enum SimpleLineStyle _result;
+    HRESULT _hr = get_Style(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISimpleLineSymbol::PutStyle ( enum SimpleLineStyle pVal ) {
+    HRESULT _hr = put_Style(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR ISimpleLineSymbol::GetColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_Color(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISimpleLineSymbol::PutColor ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_Color(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double ISimpleLineSymbol::GetWidth ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Width(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISimpleLineSymbol::PutWidth ( double pVal ) {
+    HRESULT _hr = put_Width(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ISimpleFillSymbol wrapper method implementations
+//
+
+inline enum SimpleFillStyle ISimpleFillSymbol::GetStyle ( ) {
+    enum SimpleFillStyle _result;
+    HRESULT _hr = get_Style(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISimpleFillSymbol::PutStyle ( enum SimpleFillStyle pVal ) {
+    HRESULT _hr = put_Style(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR ISimpleFillSymbol::GetColorFg ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_ColorFg(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISimpleFillSymbol::PutColorFg ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_ColorFg(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR ISimpleFillSymbol::GetColorBg ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_ColorBg(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISimpleFillSymbol::PutColorBg ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_ColorBg(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IRasterMarkerSymbol wrapper method implementations
+//
+
+inline HRESULT IRasterMarkerSymbol::SetRaster ( struct IRaster * pRaster, double nScale ) {
+    HRESULT _hr = raw_SetRaster(pRaster, nScale);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ITextSymbol wrapper method implementations
+//
+
+inline IFontPtr ITextSymbol::GetFont ( ) {
+    struct IFont * _result = 0;
+    HRESULT _hr = get_Font(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFontPtr(_result, false);
+}
+
+inline void ITextSymbol::PutRefFont ( struct IFont * pVal ) {
+    HRESULT _hr = putref_Font(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR ITextSymbol::GetColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_Color(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITextSymbol::PutColor ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_Color(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ITextSymbol::DrawTextSymbol ( struct IMapDevice * pDevice, long nX, long nY, _bstr_t bsText ) {
+    HRESULT _hr = raw_DrawTextSymbol(pDevice, nX, nY, bsText);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ICriteriaSet wrapper method implementations
+//
+
+inline _variant_t ICriteriaSet::GetCriterion ( _bstr_t bsName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Criterion(bsName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ICriteriaSet::PutCriterion ( _bstr_t bsName, const _variant_t & pVal ) {
+    HRESULT _hr = put_Criterion(bsName, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ICriteriaSet::GetEmpty ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Empty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICriteriaSet::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ICriteriaSet::GetCriterionName ( long nIndex ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CriterionName(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t ICriteriaSet::GetCriterionValue ( long nIndex ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_CriterionValue(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline VARIANT_BOOL ICriteriaSet::GetExists ( _bstr_t bsName ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Exists(bsName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IDirectoryCriteriaHelper wrapper method implementations
+//
+
+inline VARIANT_BOOL IDirectoryCriteriaHelper::GetExists ( _bstr_t bsName ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Exists(bsName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t IDirectoryCriteriaHelper::GetCriterion ( _bstr_t bsName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Criterion(bsName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline VARIANT_BOOL IDirectoryCriteriaHelper::GetUsedAll ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UsedAll(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IBaseReference wrapper method implementations
+//
+
+inline _bstr_t IBaseReference::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline DATE IBaseReference::GetIssueDate ( ) {
+    DATE _result = 0;
+    HRESULT _hr = get_IssueDate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IBaseReference::GetFullName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FullName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IBaseReference::GetFullPath ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_FullPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IBaseReference::GetDataLanguage ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DataLanguage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface ICommandLine wrapper method implementations
+//
+
+inline long ICommandLine::GetArgumentCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ArgumentCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ICommandLine::GetArgumentValue ( long nPos ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ArgumentValue(nPos, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface IBaseIterator wrapper method implementations
+//
+
+inline IBaseReferencePtr IBaseIterator::GetNext ( ) {
+    struct IBaseReference * _result = 0;
+    HRESULT _hr = raw_GetNext(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IBaseReferencePtr(_result, false);
+}
+
+//
+// interface IBaseCollection wrapper method implementations
+//
+
+inline IBaseIteratorPtr IBaseCollection::GetBaseIterator ( ) {
+    struct IBaseIterator * _result = 0;
+    HRESULT _hr = raw_GetBaseIterator(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IBaseIteratorPtr(_result, false);
+}
+
+inline IBaseReferencePtr IBaseCollection::FindBase ( _bstr_t key ) {
+    struct IBaseReference * _result = 0;
+    HRESULT _hr = raw_FindBase(key, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IBaseReferencePtr(_result, false);
+}
+
+//
+// interface IDataRow wrapper method implementations
+//
+
+inline _bstr_t IDataRow::GetType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long IDataRow::GetIndex ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Index(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t IDataRow::GetValue ( _bstr_t bsName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Value(bsName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface ITable wrapper method implementations
+//
+
+inline _bstr_t ITable::GetType ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ITable::GetRecordCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_RecordCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IDataRowPtr ITable::GetRecord ( long nIndex ) {
+    struct IDataRow * _result = 0;
+    HRESULT _hr = raw_GetRecord(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDataRowPtr(_result, false);
+}
+
+//
+// interface IQuery wrapper method implementations
+//
+
+inline HRESULT IQuery::AddCriterion ( _bstr_t bsName, const _variant_t & newVal ) {
+    HRESULT _hr = raw_AddCriterion(bsName, newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQuery::Execute ( ) {
+    HRESULT _hr = raw_Execute();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDataRowPtr IQuery::Fetch ( ) {
+    struct IDataRow * _result = 0;
+    HRESULT _hr = raw_Fetch(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDataRowPtr(_result, false);
+}
+
+//
+// interface IDatabase wrapper method implementations
+//
+
+inline ITablePtr IDatabase::GetTable ( _bstr_t bsTableType ) {
+    struct ITable * _result = 0;
+    HRESULT _hr = get_Table(bsTableType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITablePtr(_result, false);
+}
+
+inline IQueryPtr IDatabase::CreateQuery ( _bstr_t bsQueryType ) {
+    struct IQuery * _result = 0;
+    HRESULT _hr = raw_CreateQuery(bsQueryType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IQueryPtr(_result, false);
+}
+
+//
+// interface ILayer wrapper method implementations
+//
+
+inline VARIANT_BOOL ILayer::GetVisibleState ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_VisibleState(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILayer::PutVisibleState ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_VisibleState(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ILayer::CheckVisible ( long nScale, enum DeviceType nType ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_CheckVisible(nScale, nType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IGrymLayer wrapper method implementations
+//
+
+inline ITablePtr IGrymLayer::GetTable ( ) {
+    struct ITable * _result = 0;
+    HRESULT _hr = get_Table(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITablePtr(_result, false);
+}
+
+//
+// interface IFeature wrapper method implementations
+//
+
+inline ILayerPtr IFeature::GetLayer ( ) {
+    struct ILayer * _result = 0;
+    HRESULT _hr = get_Layer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ILayerPtr(_result, false);
+}
+
+inline IMapPointPtr IFeature::GetCenterPoint ( ) {
+    struct IMapPoint * _result = 0;
+    HRESULT _hr = get_CenterPoint(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPointPtr(_result, false);
+}
+
+inline IMapRectPtr IFeature::GetBoundRect ( ) {
+    struct IMapRect * _result = 0;
+    HRESULT _hr = get_BoundRect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapRectPtr(_result, false);
+}
+
+//
+// interface IMapInfoLayerFiller wrapper method implementations
+//
+
+inline HRESULT IMapInfoLayerFiller::AddByID ( long nID ) {
+    HRESULT _hr = raw_AddByID(nID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMapInfoLayerFiller::AddByFeature ( struct IFeature * pFeature ) {
+    HRESULT _hr = raw_AddByFeature(pFeature);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMapInfoLayerFiller::RemoveByID ( long nID ) {
+    HRESULT _hr = raw_RemoveByID(nID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMapInfoLayerFiller::RemoveByFeature ( struct IFeature * pFeature ) {
+    HRESULT _hr = raw_RemoveByFeature(pFeature);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMapInfoLayerFiller::RemoveAll ( ) {
+    HRESULT _hr = raw_RemoveAll();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IGraphicBase wrapper method implementations
+//
+
+inline _bstr_t IGraphicBase::GetTag ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Tag(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IGraphicBase::PutTag ( _bstr_t pVal ) {
+    HRESULT _hr = put_Tag(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IToolBase wrapper method implementations
+//
+
+inline _bstr_t IToolBase::GetTag ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Tag(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IMapTools wrapper method implementations
+//
+
+inline HRESULT IMapTools::AddTool ( struct IToolBase * pVal ) {
+    HRESULT _hr = raw_AddTool(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMapTools::RemoveTool ( struct IToolBase * pVal ) {
+    HRESULT _hr = raw_RemoveTool(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void IMapTools::PutRefCurrentTool ( struct IToolBase * ppVal ) {
+    HRESULT _hr = putref_CurrentTool(ppVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IToolBasePtr IMapTools::GetCurrentTool ( ) {
+    struct IToolBase * _result = 0;
+    HRESULT _hr = get_CurrentTool(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IToolBasePtr(_result, false);
+}
+
+inline IToolBasePtr IMapTools::FindTool ( _bstr_t bsTag ) {
+    struct IToolBase * _result = 0;
+    HRESULT _hr = raw_FindTool(bsTag, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IToolBasePtr(_result, false);
+}
+
+inline HRESULT IMapTools::SetDefaultTool ( ) {
+    HRESULT _hr = raw_SetDefaultTool();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISelection wrapper method implementations
+//
+
+inline OLE_COLOR ISelection::GetColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_Color(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ISelection::PutColor ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_Color(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ISelection::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IFeaturePtr ISelection::GetFeature ( long nIndex ) {
+    struct IFeature * _result = 0;
+    HRESULT _hr = get_Feature(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFeaturePtr(_result, false);
+}
+
+inline HRESULT ISelection::AddFeature ( struct IFeature * pFeature ) {
+    HRESULT _hr = raw_AddFeature(pFeature);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISelection::RemoveFeature ( struct IFeature * pFeature ) {
+    HRESULT _hr = raw_RemoveFeature(pFeature);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISelection::RemoveAllFeatures ( ) {
+    HRESULT _hr = raw_RemoveAllFeatures();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IRibbonGroup wrapper method implementations
+//
+
+inline HRESULT IRibbonGroup::SetIcon ( IUnknown * pIcon ) {
+    HRESULT _hr = raw_SetIcon(pIcon);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IRibbonTab wrapper method implementations
+//
+
+inline IRibbonGroupPtr IRibbonTab::GetGroup ( _bstr_t bsTag ) {
+    struct IRibbonGroup * _result = 0;
+    HRESULT _hr = get_Group(bsTag, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRibbonGroupPtr(_result, false);
+}
+
+inline IRibbonGroupPtr IRibbonTab::CreateGroup ( enum RibbonGroupType nType, _bstr_t bsTag, _bstr_t bsPlacementCode, _bstr_t bsName ) {
+    struct IRibbonGroup * _result = 0;
+    HRESULT _hr = raw_CreateGroup(nType, bsTag, bsPlacementCode, bsName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRibbonGroupPtr(_result, false);
+}
+
+//
+// interface IRibbonBar wrapper method implementations
+//
+
+inline IRibbonTabPtr IRibbonBar::GetTab ( _bstr_t bsTag ) {
+    struct IRibbonTab * _result = 0;
+    HRESULT _hr = get_Tab(bsTag, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRibbonTabPtr(_result, false);
+}
+
+inline IRibbonTabPtr IRibbonBar::CreateTab ( _bstr_t bsTag, _bstr_t bsPlacementCode, _bstr_t bsName ) {
+    struct IRibbonTab * _result = 0;
+    HRESULT _hr = raw_CreateTab(bsTag, bsPlacementCode, bsName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRibbonTabPtr(_result, false);
+}
+
+//
+// interface ICustomPage wrapper method implementations
+//
+
+inline VARIANT_BOOL ICustomPage::CanRemove ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_CanRemove(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IUnknownPtr ICustomPage::GetControl ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get_Control(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface ICustomPageCollection wrapper method implementations
+//
+
+inline ICustomPagePtr ICustomPageCollection::GetPage ( _bstr_t bsTag ) {
+    struct ICustomPage * _result = 0;
+    HRESULT _hr = get_Page(bsTag, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICustomPagePtr(_result, false);
+}
+
+inline HRESULT ICustomPageCollection::AddPage ( struct ICustomPage * pPage ) {
+    HRESULT _hr = raw_AddPage(pPage);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustomPageCollection::RemovePage ( struct ICustomPage * pPage ) {
+    HRESULT _hr = raw_RemovePage(pPage);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustomPageCollection::ActivatePage ( struct ICustomPage * pPage ) {
+    HRESULT _hr = raw_ActivatePage(pPage);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ICustomPagePtr ICustomPageCollection::GetActivePage ( ) {
+    struct ICustomPage * _result = 0;
+    HRESULT _hr = get_ActivePage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICustomPagePtr(_result, false);
+}
+
+//
+// interface IDirectoryCollection wrapper method implementations
+//
+
+inline HRESULT IDirectoryCollection::AddDirectory ( struct IDirectory * pDirectory ) {
+    HRESULT _hr = raw_AddDirectory(pDirectory);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDirectoryCollection::GrymRemoveDirectory ( struct IDirectory * pDirectory ) {
+    HRESULT _hr = raw_GrymRemoveDirectory(pDirectory);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDirectoryPtr IDirectoryCollection::GetDirectory ( _bstr_t bsTag ) {
+    struct IDirectory * _result = 0;
+    HRESULT _hr = get_Directory(bsTag, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDirectoryPtr(_result, false);
+}
+
+inline IDirectoryPtr IDirectoryCollection::GetActiveDirectory ( ) {
+    struct IDirectory * _result = 0;
+    HRESULT _hr = get_ActiveDirectory(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDirectoryPtr(_result, false);
+}
+
+inline HRESULT IDirectoryCollection::Search ( struct ICriteriaSet * pCriteria, _bstr_t bsQueryCaption, _bstr_t bsQueryDescription ) {
+    HRESULT _hr = raw_Search(pCriteria, bsQueryCaption, bsQueryDescription);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void IDirectoryCollection::PutRefActiveDirectory ( struct IDirectory * pVal ) {
+    HRESULT _hr = putref_ActiveDirectory(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ICriteriaSetPtr IDirectoryCollection::GetCurrentSearchCriteria ( ) {
+    struct ICriteriaSet * _result = 0;
+    HRESULT _hr = get_CurrentSearchCriteria(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICriteriaSetPtr(_result, false);
+}
+
+inline _bstr_t IDirectoryCollection::GetCurrentSearchCaption ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CurrentSearchCaption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IDirectoryCollection::GetCurrentSearchDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CurrentSearchDescription(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IGrymControl wrapper method implementations
+//
+
+inline enum GrymControlType IGrymControl::GetControlType ( ) {
+    enum GrymControlType _result;
+    HRESULT _hr = get_ControlType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum GrymControlStyle IGrymControl::GetStyle ( ) {
+    enum GrymControlStyle _result;
+    HRESULT _hr = get_Style(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGrymControl::PutStyle ( enum GrymControlStyle pVal ) {
+    HRESULT _hr = put_Style(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IGrymControl::GetFocused ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Focused(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGrymControl::PutFocused ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_Focused(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IGrymControl::GetWidth ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Width(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGrymControl::PutWidth ( long pVal ) {
+    HRESULT _hr = put_Width(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IGrymControl::GetHeight ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Height(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGrymControl::PutHeight ( long pVal ) {
+    HRESULT _hr = put_Height(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IGrymHTMLViewControl wrapper method implementations
+//
+
+inline void IGrymHTMLViewControl::PutContent ( _bstr_t pVal ) {
+    HRESULT _hr = put_Content(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IGrymHTMLViewControl::GetContent ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Content(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IGrymHTMLViewControl::PutRefImages ( struct IRasterSet * pVal ) {
+    HRESULT _hr = putref_Images(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IRasterSetPtr IGrymHTMLViewControl::GetImages ( ) {
+    struct IRasterSet * _result = 0;
+    HRESULT _hr = get_Images(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterSetPtr(_result, false);
+}
+
+inline HRESULT IGrymHTMLViewControl::SetAttribute ( _bstr_t bsElementID, _bstr_t bsAttrName, _bstr_t bsAttrVal ) {
+    HRESULT _hr = raw_SetAttribute(bsElementID, bsAttrName, bsAttrVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IGrymHTMLViewControl::GetAttribute ( _bstr_t bsElementID, _bstr_t bsAttrName ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetAttribute(bsElementID, bsAttrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IGrymHTMLViewControl::SetStyleAttribute ( _bstr_t bsElementID, _bstr_t bsAttrName, _bstr_t bsAttrVal ) {
+    HRESULT _hr = raw_SetStyleAttribute(bsElementID, bsAttrName, bsAttrVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IGrymHTMLViewControl::GetStyleAttribute ( _bstr_t bsElementID, _bstr_t bsAttrName ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetStyleAttribute(bsElementID, bsAttrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IDevSizePtr IGrymHTMLViewControl::GetContentSize ( ) {
+    struct IDevSize * _result = 0;
+    HRESULT _hr = get_ContentSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevSizePtr(_result, false);
+}
+
+inline HRESULT IGrymHTMLViewControl::EnsureVisible ( _bstr_t bsElementID ) {
+    HRESULT _hr = raw_EnsureVisible(bsElementID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGrymHTMLViewControl::ModifyHTML ( _bstr_t bsElementID, enum HTMLModificationType mtVal, _bstr_t bsVal ) {
+    HRESULT _hr = raw_ModifyHTML(bsElementID, mtVal, bsVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDevPointPtr IGrymHTMLViewControl::ClientToScreen ( struct IDevPoint * pClientCoord ) {
+    struct IDevPoint * _result = 0;
+    HRESULT _hr = raw_ClientToScreen(pClientCoord, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevPointPtr(_result, false);
+}
+
+inline IDevPointPtr IGrymHTMLViewControl::ScreenToClient ( struct IDevPoint * pScreenCoord ) {
+    struct IDevPoint * _result = 0;
+    HRESULT _hr = raw_ScreenToClient(pScreenCoord, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevPointPtr(_result, false);
+}
+
+inline _bstr_t IGrymHTMLViewControl::GetElementIDByPos ( struct IDevPoint * pClientCoord ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetElementIDByPos(pClientCoord, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IShapeFill wrapper method implementations
+//
+
+inline HRESULT IShapeFill::SetOID ( long nOID ) {
+    HRESULT _hr = raw_SetOID(nOID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IShapeFill::AddComponent ( enum ComponentDimension nDim, const _variant_t & vtXYs ) {
+    HRESULT _hr = raw_AddComponent(nDim, vtXYs);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IShapeFill::AddPoint ( double nX, double nY ) {
+    HRESULT _hr = raw_AddPoint(nX, nY);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IPluginStaticLayerInfo wrapper method implementations
+//
+
+inline _bstr_t IPluginStaticLayerInfo::GetShapeInfo ( long nOID ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetShapeInfo(nOID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IPluginShapeCursor wrapper method implementations
+//
+
+inline VARIANT_BOOL IPluginShapeCursor::Next ( struct IShapeFill * pShape ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Next(pShape, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IPluginShapeCursor::GetShapeInfo ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ShapeInfo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IPluginShapeCursor::GetLabel ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Label(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IMapPointPtr IPluginShapeCursor::GetLabelAnchor ( ) {
+    struct IMapPoint * _result = 0;
+    HRESULT _hr = get_LabelAnchor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPointPtr(_result, false);
+}
+
+inline ITextSymbolPtr IPluginShapeCursor::GetTextSymbol ( ) {
+    struct ITextSymbol * _result = 0;
+    HRESULT _hr = get_TextSymbol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITextSymbolPtr(_result, false);
+}
+
+inline IMarkerSymbolPtr IPluginShapeCursor::GetMarkerSymbol ( ) {
+    struct IMarkerSymbol * _result = 0;
+    HRESULT _hr = get_MarkerSymbol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMarkerSymbolPtr(_result, false);
+}
+
+inline ILineSymbolPtr IPluginShapeCursor::GetLineSymbol ( ) {
+    struct ILineSymbol * _result = 0;
+    HRESULT _hr = get_LineSymbol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ILineSymbolPtr(_result, false);
+}
+
+inline IFillSymbolPtr IPluginShapeCursor::GetFillSymbol ( ) {
+    struct IFillSymbol * _result = 0;
+    HRESULT _hr = get_FillSymbol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFillSymbolPtr(_result, false);
+}
+
+//
+// interface IPluginStaticLayer wrapper method implementations
+//
+
+inline VARIANT_BOOL IPluginStaticLayer::GetSelectable ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Selectable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPluginStaticLayer::PutSelectable ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_Selectable(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IPluginStaticLayer::SetLayerInfo ( struct IPluginStaticLayerInfo * pInfo ) {
+    HRESULT _hr = raw_SetLayerInfo(pInfo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IPluginStaticLayer::SetDeviceVisibility ( enum DeviceType nDeviceType, long nMaxVisibleScale, long nMinVisibleScale ) {
+    HRESULT _hr = raw_SetDeviceVisibility(nDeviceType, nMaxVisibleScale, nMinVisibleScale);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IPluginStaticLayer::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IPluginStaticLayer::AppendData ( struct IPluginShapeCursor * pDataCursor ) {
+    HRESULT _hr = raw_AppendData(pDataCursor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IPluginStaticLayer::RemoveObject ( long nID ) {
+    HRESULT _hr = raw_RemoveObject(nID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IStableTable wrapper method implementations
+//
+
+inline IDataRowPtr IStableTable::GetRecordByStableID ( long nStableID ) {
+    struct IDataRow * _result = 0;
+    HRESULT _hr = raw_GetRecordByStableID(nStableID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDataRowPtr(_result, false);
+}
+
+//
+// interface IGrymObjectFactoryDeprecated wrapper method implementations
+//
+
+inline IQueryPtr IGrymObjectFactoryDeprecated::CreateQuery ( _bstr_t bsQueryType ) {
+    struct IQuery * _result = 0;
+    HRESULT _hr = raw_CreateQuery(bsQueryType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IQueryPtr(_result, false);
+}
+
+inline IRasterPtr IGrymObjectFactoryDeprecated::CreateRasterFromHandle ( OLE_HANDLE hBitmap ) {
+    struct IRaster * _result = 0;
+    HRESULT _hr = raw_CreateRasterFromHandle(hBitmap, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterPtr(_result, false);
+}
+
+inline IRasterPtr IGrymObjectFactoryDeprecated::CreateRasterFromIcon ( OLE_HANDLE hIcon ) {
+    struct IRaster * _result = 0;
+    HRESULT _hr = raw_CreateRasterFromIcon(hIcon, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterPtr(_result, false);
+}
+
+inline IRasterPtr IGrymObjectFactoryDeprecated::CreateRasterFromImageList ( OLE_HANDLE hImageList, long nIndex ) {
+    struct IRaster * _result = 0;
+    HRESULT _hr = raw_CreateRasterFromImageList(hImageList, nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterPtr(_result, false);
+}
+
+//
+// interface IGrymPluginInfo wrapper method implementations
+//
+
+inline _bstr_t IGrymPluginInfo::GetXMLInfo ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_XMLInfo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IGrymPluginOptions wrapper method implementations
+//
+
+inline VARIANT_BOOL IGrymPluginOptions::OptionDialog ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OptionDialog(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// dispinterface _IBaseCollectionEvents wrapper method implementations
+//
+
+inline HRESULT _IBaseCollectionEvents::OnCollectionChanged ( ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+//
+// interface IScalableSymbol wrapper method implementations
+//
+
+inline VARIANT_BOOL IScalableSymbol::GetScalable ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Scalable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IScalableSymbol::PutScalable ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_Scalable(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IScalableSymbol::GetReferenceScale ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ReferenceScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IScalableSymbol::PutReferenceScale ( long pVal ) {
+    HRESULT _hr = put_ReferenceScale(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IScalableSymbol::GetMinScale ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MinScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IScalableSymbol::PutMinScale ( long pVal ) {
+    HRESULT _hr = put_MinScale(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IScalableSymbol::GetMaxScale ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MaxScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IScalableSymbol::PutMaxScale ( long pVal ) {
+    HRESULT _hr = put_MaxScale(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IGraphicCustom wrapper method implementations
+//
+
+inline HRESULT IGraphicCustom::OnRemove ( ) {
+    HRESULT _hr = raw_OnRemove();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGraphicCustom::Draw ( struct IMapDevice * pDevice ) {
+    HRESULT _hr = raw_Draw(pDevice);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDevRectPtr IGraphicCustom::GetBoundRect ( struct IMapDevice * pDevice ) {
+    struct IDevRect * _result = 0;
+    HRESULT _hr = raw_GetBoundRect(pDevice, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevRectPtr(_result, false);
+}
+
+inline VARIANT_BOOL IGraphicCustom::IsMapPointInside ( struct IMapPoint * pPos ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsMapPointInside(pPos, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IPluginShapeLayer wrapper method implementations
+//
+
+inline VARIANT_BOOL IPluginShapeLayer::CheckLabelVisible ( long lScale, enum DeviceType devType ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_CheckLabelVisible(lScale, devType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IPluginShapeLayer::GetSelectable ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Selectable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IPluginShapeLayer::GetScalableSymbol ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ScalableSymbol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IPluginShapeLayer::GetReferenceScale ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ReferenceScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IPluginShapeCursorPtr IPluginShapeLayer::QueryShapes ( struct IMapRect * pRect ) {
+    struct IPluginShapeCursor * _result = 0;
+    HRESULT _hr = raw_QueryShapes(pRect, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IPluginShapeCursorPtr(_result, false);
+}
+
+inline IPluginShapeCursorPtr IPluginShapeLayer::QueryShapeById ( long nOID ) {
+    struct IPluginShapeCursor * _result = 0;
+    HRESULT _hr = raw_QueryShapeById(nOID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IPluginShapeCursorPtr(_result, false);
+}
+
+//
+// interface IPluginCustomDrawLayer wrapper method implementations
+//
+
+inline HRESULT IPluginCustomDrawLayer::Draw ( struct IMapDevice * device ) {
+    HRESULT _hr = raw_Draw(device);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMapInfoDirOrgFilter wrapper method implementations
+//
+
+inline VARIANT_BOOL IMapInfoDirOrgFilter::Check ( struct IDataRow * pOrgRecord, VARIANT_BOOL bInCurrentSelection ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Check(pOrgRecord, bInCurrentSelection, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IMapInfoDirOrgFilter::GetOrgIcon ( struct IDataRow * pOrgRecord, VARIANT_BOOL bInCurrentSelection ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetOrgIcon(pOrgRecord, bInCurrentSelection, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IMapInfoDirOrgFilter::GetTitle ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Title(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IMapInfoDirOrgFilter::GetTitleIcon ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_TitleIcon(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IRasterSetPtr IMapInfoDirOrgFilter::GetImages ( ) {
+    struct IRasterSet * _result = 0;
+    HRESULT _hr = get_Images(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterSetPtr(_result, false);
+}
+
+//
+// interface IMapInfoActionsCustomizer wrapper method implementations
+//
+
+inline _bstr_t IMapInfoActionsCustomizer::MakeActions ( struct IFeature * pFeature ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_MakeActions(pFeature, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IRasterSetPtr IMapInfoActionsCustomizer::GetImages ( ) {
+    struct IRasterSet * _result = 0;
+    HRESULT _hr = get_Images(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterSetPtr(_result, false);
+}
+
+inline VARIANT_BOOL IMapInfoActionsCustomizer::OnAction ( struct IFeature * pFeature, _bstr_t bsAction ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OnAction(pFeature, bsAction, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IPopupMenuMapViewContext wrapper method implementations
+//
+
+inline IDevPointPtr IPopupMenuMapViewContext::GetScreenPos ( ) {
+    struct IDevPoint * _result = 0;
+    HRESULT _hr = get_ScreenPos(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevPointPtr(_result, false);
+}
+
+inline IDevPointPtr IPopupMenuMapViewContext::GetClientPos ( ) {
+    struct IDevPoint * _result = 0;
+    HRESULT _hr = get_ClientPos(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevPointPtr(_result, false);
+}
+
+inline IMapPointPtr IPopupMenuMapViewContext::GetMapPos ( ) {
+    struct IMapPoint * _result = 0;
+    HRESULT _hr = get_MapPos(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPointPtr(_result, false);
+}
+
+//
+// interface IGrymToolRadius wrapper method implementations
+//
+
+inline double IGrymToolRadius::GetRadius ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Radius(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IMapPointPtr IGrymToolRadius::GetCenterPoint ( ) {
+    struct IMapPoint * _result = 0;
+    HRESULT _hr = get_CenterPoint(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPointPtr(_result, false);
+}
+
+//
+// interface ITool wrapper method implementations
+//
+
+inline OLE_HANDLE ITool::GetCursor ( ) {
+    OLE_HANDLE _result;
+    HRESULT _hr = get_Cursor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ITool::Activate ( VARIANT_BOOL bActivate ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Activate(bActivate, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ITool::OnKeyDown ( long nChar, long nShift ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OnKeyDown(nChar, nShift, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ITool::OnKeyUp ( long nChar, long nShift ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OnKeyUp(nChar, nShift, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ITool::OnMouseDown ( enum MouseButton nButton, long nShift, long nX, long nY ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OnMouseDown(nButton, nShift, nX, nY, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ITool::OnMouseDblClk ( enum MouseButton nButton, long nShift, long nX, long nY ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OnMouseDblClk(nButton, nShift, nX, nY, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ITool::OnMouseUp ( enum MouseButton nButton, long nShift, long nX, long nY ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OnMouseUp(nButton, nShift, nX, nY, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ITool::OnMouseMove ( long nShift, long nX, long nY ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OnMouseMove(nShift, nX, nY, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ITool::OnClick ( long nX, long nY ) {
+    HRESULT _hr = raw_OnClick(nX, nY);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITool::OnDraw ( struct IMapDevice * pDevice ) {
+    HRESULT _hr = raw_OnDraw(pDevice);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMapCoordinateTransformationGeo wrapper method implementations
+//
+
+inline IMapPointPtr IMapCoordinateTransformationGeo::LocalToGeo ( struct IMapPoint * pSrcLocal ) {
+    struct IMapPoint * _result = 0;
+    HRESULT _hr = raw_LocalToGeo(pSrcLocal, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPointPtr(_result, false);
+}
+
+inline IMapPointPtr IMapCoordinateTransformationGeo::GeoToLocal ( struct IMapPoint * pSrcGeo ) {
+    struct IMapPoint * _result = 0;
+    HRESULT _hr = raw_GeoToLocal(pSrcGeo, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPointPtr(_result, false);
+}
+
+inline _bstr_t IMapCoordinateTransformationGeo::GetSpheroid ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Spheroid(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IMapCoordinateTransformationUTM wrapper method implementations
+//
+
+inline IMapPointPtr IMapCoordinateTransformationUTM::LocalToUTM ( struct IMapPoint * pSrcLocal ) {
+    struct IMapPoint * _result = 0;
+    HRESULT _hr = raw_LocalToUTM(pSrcLocal, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPointPtr(_result, false);
+}
+
+inline IMapPointPtr IMapCoordinateTransformationUTM::UTMToLocal ( struct IMapPoint * pSrcUTM ) {
+    struct IMapPoint * _result = 0;
+    HRESULT _hr = raw_UTMToLocal(pSrcUTM, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPointPtr(_result, false);
+}
+
+inline _bstr_t IMapCoordinateTransformationUTM::GetZone ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Zone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IMapCoordinateTransformationGeoPtr IMapCoordinateTransformationUTM::GetMapCoordinateTransformationGeo ( ) {
+    struct IMapCoordinateTransformationGeo * _result = 0;
+    HRESULT _hr = get_MapCoordinateTransformationGeo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapCoordinateTransformationGeoPtr(_result, false);
+}
+
+//
+// interface ISelection2 wrapper method implementations
+//
+
+inline HRESULT ISelection2::AddFeatures ( const _variant_t & vtFeatures ) {
+    HRESULT _hr = raw_AddFeatures(vtFeatures);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISelection2::AddFeaturesByID ( struct ILayer * pLayer, const _variant_t & vtFeatureIDs ) {
+    HRESULT _hr = raw_AddFeaturesByID(pLayer, vtFeatureIDs);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMapInfoLayerFiller2 wrapper method implementations
+//
+
+inline HRESULT IMapInfoLayerFiller2::AddByID2 ( long nID, struct IRaster * pRaster ) {
+    HRESULT _hr = raw_AddByID2(nID, pRaster);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMapInfoLayerFiller2::AddByFeature2 ( struct IFeature * pFeature, struct IRaster * pRaster ) {
+    HRESULT _hr = raw_AddByFeature2(pFeature, pRaster);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMapInfoLayerFiller3 wrapper method implementations
+//
+
+inline HRESULT IMapInfoLayerFiller3::AddByID3 ( long nID, struct IRaster * pRaster, long nPriority ) {
+    HRESULT _hr = raw_AddByID3(nID, pRaster, nPriority);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMapInfoLayerFiller3::AddByFeature3 ( struct IFeature * pFeature, struct IRaster * pRaster, long nPriority ) {
+    HRESULT _hr = raw_AddByFeature3(pFeature, pRaster, nPriority);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMapInfoLayerBlockProp wrapper method implementations
+//
+
+inline VARIANT_BOOL IMapInfoLayerBlockProp::CheckVisible ( long lScale, enum DeviceType nType ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_CheckVisible(lScale, nType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// dispinterface _ICalloutEvents wrapper method implementations
+//
+
+inline HRESULT _ICalloutEvents::OnClose ( ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _ICalloutEvents::OnButtonAction ( long nIndex ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003", nIndex);
+}
+
+//
+// dispinterface _ICalloutTabEvents wrapper method implementations
+//
+
+inline HRESULT _ICalloutTabEvents::OnAction ( _bstr_t bsActionID ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0008", (BSTR)bsActionID);
+}
+
+inline HRESULT _ICalloutTabEvents::OnDestroyed ( ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _ICalloutTabEvents::OnLeftMouseButtonClick ( _bstr_t bsBlockID ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0008", (BSTR)bsBlockID);
+}
+
+//
+// interface ISpatialFilter wrapper method implementations
+//
+
+inline VARIANT_BOOL ISpatialFilter::Check ( struct IMapPoint * pPos ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Check(pPos, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IMapRectPtr ISpatialFilter::GetBounds ( ) {
+    struct IMapRect * _result = 0;
+    HRESULT _hr = get_Bounds(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapRectPtr(_result, false);
+}
+
+//
+// interface IDirectoryViewCellControllerProp wrapper method implementations
+//
+
+inline long IDirectoryViewCellControllerProp::GetFlags ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Flags(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IDirectoryViewCellControllerProp::PutFlags ( long pVal ) {
+    HRESULT _hr = put_Flags(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IDirectoryExpandableViewCellController wrapper method implementations
+//
+
+inline VARIANT_BOOL IDirectoryExpandableViewCellController::GetCanExpand ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_CanExpand(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IDirectoryExpandableViewCellController::GetCanCollapse ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_CanCollapse(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IDirectoryExpandableViewCellController::Expand ( ) {
+    HRESULT _hr = raw_Expand();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDirectoryExpandableViewCellController::Collapse ( ) {
+    HRESULT _hr = raw_Collapse();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IDirectoryClipboardViewCellController wrapper method implementations
+//
+
+inline _bstr_t IDirectoryClipboardViewCellController::MakeClipboardContentText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_MakeClipboardContentText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IDirectoryClipboardViewCellController::MakeClipboardContentHTML ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_MakeClipboardContentHTML(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IDirectoryService wrapper method implementations
+//
+
+inline IControlSetPtr IDirectoryService::GetPersonalToolbar ( ) {
+    struct IControlSet * _result = 0;
+    HRESULT _hr = get_PersonalToolbar(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IControlSetPtr(_result, false);
+}
+
+//
+// interface IDirectoryEx wrapper method implementations
+//
+
+inline HRESULT IDirectoryEx::SetDirectoryService ( struct IDirectoryService * pService ) {
+    HRESULT _hr = raw_SetDirectoryService(pService);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IDirectoryHTMLViewCell wrapper method implementations
+//
+
+inline HRESULT IDirectoryHTMLViewCell::Update ( ) {
+    HRESULT _hr = raw_Update();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IDirectoryHTMLViewCell::GetParentElementID ( _bstr_t bsElementID ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetParentElementID(bsElementID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IDirectoryPrintableViewCellController wrapper method implementations
+//
+
+inline VARIANT_BOOL IDirectoryPrintableViewCellController::GetCanPrint ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_CanPrint(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IDirectoryPrintableViewCellController::MakePrintContent ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_MakePrintContent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IRasterSetPtr IDirectoryPrintableViewCellController::GetPrintImages ( ) {
+    struct IRasterSet * _result = 0;
+    HRESULT _hr = get_PrintImages(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterSetPtr(_result, false);
+}
+
+//
+// interface IStdDirectoryCustomControllerContainer wrapper method implementations
+//
+
+inline HRESULT IStdDirectoryCustomControllerContainer::RegisterController ( IUnknown * pVal ) {
+    HRESULT _hr = raw_RegisterController(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IStdDirectoryCustomControllerContainer::UnregisterController ( IUnknown * pVal ) {
+    HRESULT _hr = raw_UnregisterController(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IStdDirectoryDataRowFilter wrapper method implementations
+//
+
+inline VARIANT_BOOL IStdDirectoryDataRowFilter::Check ( struct IDataRow * pRecord ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Check(pRecord, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IStdDirectoryQuickFilter wrapper method implementations
+//
+
+inline long IStdDirectoryQuickFilter::SkipCount ( long nIndex ) {
+    long _result = 0;
+    HRESULT _hr = raw_SkipCount(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IStdDirectoryQueryCustomize wrapper method implementations
+//
+
+inline HRESULT IStdDirectoryQueryCustomize::AddFilter ( IUnknown * pFilter ) {
+    HRESULT _hr = raw_AddFilter(pFilter);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IStdDirectoryCustomFilterController wrapper method implementations
+//
+
+inline HRESULT IStdDirectoryCustomFilterController::CustomizeQuery ( struct IDirectoryCriteriaHelper * pCriterion, struct IStdDirectoryQueryCustomize * pQuery ) {
+    HRESULT _hr = raw_CustomizeQuery(pCriterion, pQuery);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IStdDirectoryCellInfo wrapper method implementations
+//
+
+inline IDataRowPtr IStdDirectoryCellInfo::GetRecord ( ) {
+    struct IDataRow * _result = 0;
+    HRESULT _hr = get_Record(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDataRowPtr(_result, false);
+}
+
+inline HRESULT IStdDirectoryCellInfo::Update ( ) {
+    HRESULT _hr = raw_Update();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IStdDirectoryCellInfo::GetHTMLParentElementID ( _bstr_t bsElementID ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetHTMLParentElementID(bsElementID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline VARIANT_BOOL IStdDirectoryCellInfo::GetExpanded ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Expanded(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAutoSuggestionComboBoxFiller wrapper method implementations
+//
+
+inline HRESULT IAutoSuggestionComboBoxFiller::AddString ( _bstr_t bsVal, const _variant_t & varData ) {
+    HRESULT _hr = raw_AddString(bsVal, varData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAutoSuggestionComboBoxController wrapper method implementations
+//
+
+inline long IAutoSuggestionComboBoxController::GetMinSymbolsCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MinSymbolsCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAutoSuggestionComboBoxController::FillCombo ( _bstr_t bsStringPart, struct IAutoSuggestionComboBoxFiller * pComboFiller ) {
+    HRESULT _hr = raw_FillCombo(bsStringPart, pComboFiller);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IGrymControlAutoSuggestionComboBox wrapper method implementations
+//
+
+inline HRESULT IGrymControlAutoSuggestionComboBox::SetAutoSuggestionController ( struct IAutoSuggestionComboBoxController * pVal ) {
+    HRESULT _hr = raw_SetAutoSuggestionController(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IGrymControlAutoSuggestionComboBox::GetEmpty ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Empty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t IGrymControlAutoSuggestionComboBox::GetCurSel ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_CurSel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline HRESULT IGrymControlAutoSuggestionComboBox::ResetContent ( ) {
+    HRESULT _hr = raw_ResetContent();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ILegendItem wrapper method implementations
+//
+
+inline VARIANT_BOOL ILegendItem::GetVisibleState ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_VisibleState(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILegendItem::PutVisibleState ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_VisibleState(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ILegend wrapper method implementations
+//
+
+inline HRESULT ILegend::AddElement ( struct ILegendItem * pVal ) {
+    HRESULT _hr = raw_AddElement(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ILegend::RemoveElement ( struct ILegendItem * pVal ) {
+    HRESULT _hr = raw_RemoveElement(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IContextBase2 wrapper method implementations
+//
+
+inline HRESULT IContextBase2::LockCustomInfo ( _bstr_t bsKey, const _variant_t & newVal ) {
+    HRESULT _hr = raw_LockCustomInfo(bsKey, newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IControlPlacement wrapper method implementations
+//
+
+inline _bstr_t IControlPlacement::GetPlacementCode ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PlacementCode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IControlAppearance wrapper method implementations
+//
+
+inline _bstr_t IControlAppearance::GetTag ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Tag(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IControlAppearance::GetCaption ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Caption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IControlAppearance::GetDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Description(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IUnknownPtr IControlAppearance::GetIcon ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get_Icon(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface IControlState wrapper method implementations
+//
+
+inline VARIANT_BOOL IControlState::GetAvailable ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Available(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ICommandState wrapper method implementations
+//
+
+inline VARIANT_BOOL ICommandState::GetEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Enabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ICommandState::GetChecked ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Checked(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ICommandAccelerator wrapper method implementations
+//
+
+inline long ICommandAccelerator::GetAccelerator ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Accelerator(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ICommandAction wrapper method implementations
+//
+
+inline HRESULT ICommandAction::OnCommand ( ) {
+    HRESULT _hr = raw_OnCommand();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ICommandQuickAccessOptions wrapper method implementations
+//
+
+inline VARIANT_BOOL ICommandQuickAccessOptions::IsQuickAccessEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsQuickAccessEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ICommandPopup wrapper method implementations
+//
+
+inline IUnknownPtr ICommandPopup::GetPopupControl ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get_PopupControl(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface IChildControl wrapper method implementations
+//
+
+inline IUnknownPtr IChildControl::GetParentControl ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get_ParentControl(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface IRibbonGroup2 wrapper method implementations
+//
+
+inline IUnknownPtr IRibbonGroup2::GetOptionsCommand ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get_OptionsCommand(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline void IRibbonGroup2::PutRefOptionsCommand ( IUnknown * pVal ) {
+    HRESULT _hr = putref_OptionsCommand(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ISearchRibbonGroup wrapper method implementations
+//
+
+inline HRESULT ISearchRibbonGroup::SetGroupImage ( IUnknown * pIcon ) {
+    HRESULT _hr = raw_SetGroupImage(pIcon);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISearchRibbonGroup::SetSearchButtonTooltips ( _bstr_t bsTooltip, _bstr_t bsTooltipDisabled ) {
+    HRESULT _hr = raw_SetSearchButtonTooltips(bsTooltip, bsTooltipDisabled);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISearchRibbonGroup::SetClearButtonTooltips ( _bstr_t bsTooltip, _bstr_t bsTooltipDisabled ) {
+    HRESULT _hr = raw_SetClearButtonTooltips(bsTooltip, bsTooltipDisabled);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL ISearchRibbonGroup::IsSearchEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsSearchEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISearchRibbonGroup::IsClearEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsClearEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ISearchRibbonGroup::DoSearch ( ) {
+    HRESULT _hr = raw_DoSearch();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISearchRibbonGroup::ClearAll ( ) {
+    HRESULT _hr = raw_ClearAll();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISearchRibbonGroup::SetQueryDescription ( _bstr_t bsTitle, _bstr_t bsText ) {
+    HRESULT _hr = raw_SetQueryDescription(bsTitle, bsText);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ISearchRibbonGroup::SetGroupImageTooltip ( _bstr_t bsTooltip ) {
+    HRESULT _hr = raw_SetGroupImageTooltip(bsTooltip);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IRibbonGroupControl wrapper method implementations
+//
+
+inline IRibbonGroupControlPtr IRibbonGroupControl::Clone ( ) {
+    struct IRibbonGroupControl * _result = 0;
+    HRESULT _hr = raw_Clone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRibbonGroupControlPtr(_result, false);
+}
+
+//
+// interface ISearchGroupControl wrapper method implementations
+//
+
+inline VARIANT_BOOL ISearchGroupControl::GetSearchEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_SearchEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISearchGroupControl::GetClearEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ClearEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ISearchGroupControl::FillCriteriaSet ( struct ICriteriaSet * pCritSet ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_FillCriteriaSet(pCritSet, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ISearchGroupControl::GetSearchDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SearchDescription(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISearchGroupControl::GetSearchCaption ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SearchCaption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT ISearchGroupControl::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IContainerControl wrapper method implementations
+//
+
+inline IUnknownPtr IContainerControl::GetInternalControl ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get_InternalControl(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface IGrymControlEditHintHolder wrapper method implementations
+//
+
+inline _bstr_t IGrymControlEditHintHolder::GetEditHint ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_EditHint(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IGrymControlEditHintHolder::PutEditHint ( _bstr_t pVal ) {
+    HRESULT _hr = put_EditHint(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IGrymControlEditTextHolder wrapper method implementations
+//
+
+inline _bstr_t IGrymControlEditTextHolder::GetEditText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_EditText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IGrymControlEditTextHolder::PutEditText ( _bstr_t pVal ) {
+    HRESULT _hr = put_EditText(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IGrymControlComboBox wrapper method implementations
+//
+
+inline HRESULT IGrymControlComboBox::ResetContent ( ) {
+    HRESULT _hr = raw_ResetContent();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IGrymControlComboBox::AddString ( _bstr_t sVal, const _variant_t & varData ) {
+    long _result = 0;
+    HRESULT _hr = raw_AddString(sVal, varData, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IGrymControlComboBox::InsertString ( _bstr_t sVal, long nIndex, const _variant_t & varData ) {
+    long _result = 0;
+    HRESULT _hr = raw_InsertString(sVal, nIndex, varData, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IGrymControlComboBox::GetString ( long nIndex ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetString(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t IGrymControlComboBox::GetData ( long nIndex ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetData(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline HRESULT IGrymControlComboBox::DeleteString ( long nIndex ) {
+    HRESULT _hr = raw_DeleteString(nIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IGrymControlComboBox::FindStringExact ( long nStartIndex, _bstr_t sVal ) {
+    long _result = 0;
+    HRESULT _hr = raw_FindStringExact(nStartIndex, sVal, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IGrymControlComboBox::FindString ( long nStartIndex, _bstr_t sVal ) {
+    long _result = 0;
+    HRESULT _hr = raw_FindString(nStartIndex, sVal, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IGrymControlComboBox::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGrymControlComboBox::PutComboBoxStyle ( enum ComboBoxStyle pVal ) {
+    HRESULT _hr = put_ComboBoxStyle(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum ComboBoxStyle IGrymControlComboBox::GetComboBoxStyle ( ) {
+    enum ComboBoxStyle _result;
+    HRESULT _hr = get_ComboBoxStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGrymControlComboBox::PutDropDownWidth ( long pVal ) {
+    HRESULT _hr = put_DropDownWidth(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IGrymControlComboBox::GetDropDownWidth ( ) {
+    long _result = 0;
+    HRESULT _hr = get_DropDownWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGrymControlComboBox::PutCurSel ( long pVal ) {
+    HRESULT _hr = put_CurSel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IGrymControlComboBox::GetCurSel ( ) {
+    long _result = 0;
+    HRESULT _hr = get_CurSel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGrymControlComboBox::PutTopIndex ( long pVal ) {
+    HRESULT _hr = put_TopIndex(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IGrymControlComboBox::GetTopIndex ( ) {
+    long _result = 0;
+    HRESULT _hr = get_TopIndex(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IGrymControlComboBox::DropDown ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_DropDown(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IGrymControlComboBox::CloseUp ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_CloseUp(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IGrymControlComboBox::GetDroppedDown ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_DroppedDown(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IGrymControlComboBox::GetDropDownCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_DropDownCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGrymControlComboBox::PutDropDownCount ( long pVal ) {
+    HRESULT _hr = put_DropDownCount(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IGrymControlEdit wrapper method implementations
+//
+
+inline VARIANT_BOOL IGrymControlEdit::GetReadOnly ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ReadOnly(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGrymControlEdit::PutReadOnly ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ReadOnly(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IListBoxItemDrawInfo wrapper method implementations
+//
+
+inline long IListBoxItemDrawInfo::GetItemAction ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ItemAction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IListBoxItemDrawInfo::GetItemState ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ItemState(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline OLE_HANDLE IListBoxItemDrawInfo::GetWindowHandle ( ) {
+    OLE_HANDLE _result;
+    HRESULT _hr = get_WindowHandle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline OLE_HANDLE IListBoxItemDrawInfo::GetWindowDC ( ) {
+    OLE_HANDLE _result;
+    HRESULT _hr = get_WindowDC(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IDevRectPtr IListBoxItemDrawInfo::GetItemRect ( ) {
+    struct IDevRect * _result = 0;
+    HRESULT _hr = get_ItemRect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevRectPtr(_result, false);
+}
+
+inline _variant_t IListBoxItemDrawInfo::GetItemData ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ItemData(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long IListBoxItemDrawInfo::GetItemID ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ItemID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IEditAreaDrawInfo wrapper method implementations
+//
+
+inline OLE_HANDLE IEditAreaDrawInfo::GetWindowDC ( ) {
+    OLE_HANDLE _result;
+    HRESULT _hr = get_WindowDC(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IDevRectPtr IEditAreaDrawInfo::GetItemRect ( ) {
+    struct IDevRect * _result = 0;
+    HRESULT _hr = get_ItemRect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevRectPtr(_result, false);
+}
+
+inline long IEditAreaDrawInfo::GetCurSel ( ) {
+    long _result = 0;
+    HRESULT _hr = get_CurSel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IListBoxItemDrawer wrapper method implementations
+//
+
+inline HRESULT IListBoxItemDrawer::DrawItem ( struct IListBoxItemDrawInfo * pVal ) {
+    HRESULT _hr = raw_DrawItem(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IEditAreaDrawer wrapper method implementations
+//
+
+inline HRESULT IEditAreaDrawer::DrawEditArea ( struct IEditAreaDrawInfo * pVal ) {
+    HRESULT _hr = raw_DrawEditArea(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ICustomDrawGrymControlComboBox wrapper method implementations
+//
+
+inline HRESULT ICustomDrawGrymControlComboBox::SetListBoxItemDrawer ( struct IListBoxItemDrawer * pVal ) {
+    HRESULT _hr = raw_SetListBoxItemDrawer(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustomDrawGrymControlComboBox::SetEditAreaDrawer ( struct IEditAreaDrawer * pVal ) {
+    HRESULT _hr = raw_SetEditAreaDrawer(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ICustomDrawGrymControlComboBox::GetItemHeight ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ItemHeight(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICustomDrawGrymControlComboBox::PutItemHeight ( long pVal ) {
+    HRESULT _hr = put_ItemHeight(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IStatusFeedback wrapper method implementations
+//
+
+inline VARIANT_BOOL IStatusFeedback::GetDone ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Done(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IStatusFeedback::PutDone ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_Done(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// dispinterface _IGrymControlEditEvents wrapper method implementations
+//
+
+inline HRESULT _IGrymControlEditEvents::OnEditChanged ( ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IGrymControlEditEvents::OnKeyDown ( long nChar, struct IStatusFeedback * pHandled ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x000d", nChar, pHandled);
+}
+
+//
+// dispinterface _IGrymControlComboBoxEvents wrapper method implementations
+//
+
+inline HRESULT _IGrymControlComboBoxEvents::OnEditChanged ( ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IGrymControlComboBoxEvents::OnSelChanged ( ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IGrymControlComboBoxEvents::OnDropDown ( ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IGrymControlComboBoxEvents::OnCloseUp ( ) {
+    return _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IGrymControlComboBoxEvents::OnKeyDown ( long nChar, struct IStatusFeedback * pHandled ) {
+    return _com_dispatch_method(this, 0x5, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x000d", nChar, pHandled);
+}
+
+//
+// dispinterface _IGrymControlAutoSuggestionComboBoxEvents wrapper method implementations
+//
+
+inline HRESULT _IGrymControlAutoSuggestionComboBoxEvents::OnSelChanged ( const _variant_t & varItemData ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x000c", &varItemData);
+}
+
+inline HRESULT _IGrymControlAutoSuggestionComboBoxEvents::OnKeyDown ( long nChar, struct IStatusFeedback * pHandled ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x000d", nChar, pHandled);
+}
+
+inline HRESULT _IGrymControlAutoSuggestionComboBoxEvents::OnEditChanged ( ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+//
+// dispinterface _IBaseViewFrameEvents wrapper method implementations
+//
+
+inline HRESULT _IBaseViewFrameEvents::OnActivate ( ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IBaseViewFrameEvents::OnDeactivate ( ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IBaseViewFrameEvents::OnBeforeViewModeChange ( enum BaseFrameViewMode nNewViewMode ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003", nNewViewMode);
+}
+
+inline HRESULT _IBaseViewFrameEvents::OnAfterViewModeChange ( enum BaseFrameViewMode nNewViewMode ) {
+    return _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003", nNewViewMode);
+}
+
+//
+// dispinterface _IGrymHTMLViewControlEvents wrapper method implementations
+//
+
+inline HRESULT _IGrymHTMLViewControlEvents::OnLink ( _bstr_t bsLink ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0008", (BSTR)bsLink);
+}
+
+inline HRESULT _IGrymHTMLViewControlEvents::OnButton ( _bstr_t bsElementID ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0008", (BSTR)bsElementID);
+}
+
+inline HRESULT _IGrymHTMLViewControlEvents::OnLeftMouseButtonClick ( struct IDevPoint * pActionPoint, _bstr_t bsElementID ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x000d\x0008", pActionPoint, (BSTR)bsElementID);
+}
+
+inline HRESULT _IGrymHTMLViewControlEvents::OnRightMouseButtonClick ( struct IDevPoint * pActionPoint, _bstr_t bsElementID ) {
+    return _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x000d\x0008", pActionPoint, (BSTR)bsElementID);
+}
+
+inline HRESULT _IGrymHTMLViewControlEvents::OnHitTest ( struct IDevPoint * ptVal, _bstr_t bsElementID, struct IHitTestFill * pHitTestFill ) {
+    return _com_dispatch_method(this, 0x5, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x000d\x0008\x000d", ptVal, (BSTR)bsElementID, pHitTestFill);
+}
+
+//
+// interface IGrymAuthData wrapper method implementations
+//
+
+inline _bstr_t IGrymAuthData::GetLogin ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Login(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IGrymAuthData::GetPassword ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Password(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IGrymProxyOptions wrapper method implementations
+//
+
+inline VARIANT_BOOL IGrymProxyOptions::GetUseProxy ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_UseProxy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IGrymProxyOptions::GetProxyAddr ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ProxyAddr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long IGrymProxyOptions::GetProxyPort ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ProxyPort(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum ProxyAuthType IGrymProxyOptions::GetAuthType ( ) {
+    enum ProxyAuthType _result;
+    HRESULT _hr = get_AuthType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IGrymAuthDataPtr IGrymProxyOptions::RequestProxyAuthData ( VARIANT_BOOL bForceShowDlg, _bstr_t bsAdditionalMessage ) {
+    struct IGrymAuthData * _result = 0;
+    HRESULT _hr = raw_RequestProxyAuthData(bForceShowDlg, bsAdditionalMessage, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IGrymAuthDataPtr(_result, false);
+}
+
+//
+// interface IGrymConnectionOptionsCallback wrapper method implementations
+//
+
+inline HRESULT IGrymConnectionOptionsCallback::OnProxyOptionsReady ( struct IGrymProxyOptions * pVal ) {
+    HRESULT _hr = raw_OnProxyOptionsReady(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IGrymConnectionOptions wrapper method implementations
+//
+
+inline HRESULT IGrymConnectionOptions::RequestProxyOptions ( _bstr_t bsAddress, _bstr_t bsProtocol, struct IGrymConnectionOptionsCallback * pCallback ) {
+    HRESULT _hr = raw_RequestProxyOptions(bsAddress, bsProtocol, pCallback);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMenu wrapper method implementations
+//
+
+inline ISubMenuPtr IMenu::AddSubMenu ( _bstr_t bsPlacementCode, _bstr_t bsCaption ) {
+    struct ISubMenu * _result = 0;
+    HRESULT _hr = raw_AddSubMenu(bsPlacementCode, bsCaption, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISubMenuPtr(_result, false);
+}
+
+//
+// interface ISubMenu wrapper method implementations
+//
+
+inline _bstr_t ISubMenu::GetPlacementCode ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PlacementCode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ISubMenu::GetCaption ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Caption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IPopupMenu wrapper method implementations
+//
+
+inline HRESULT IPopupMenu::Show ( struct IDevPoint * pPos, struct IContextBase * pContext, struct IDevRect * pExcludeRect ) {
+    HRESULT _hr = raw_Show(pPos, pContext, pExcludeRect);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IDirectoryHTMLViewCellController wrapper method implementations
+//
+
+inline _bstr_t IDirectoryHTMLViewCellController::MakeContent ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_MakeContent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IRasterSetPtr IDirectoryHTMLViewCellController::GetImages ( ) {
+    struct IRasterSet * _result = 0;
+    HRESULT _hr = get_Images(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterSetPtr(_result, false);
+}
+
+inline VARIANT_BOOL IDirectoryHTMLViewCellController::OnSetCursor ( _bstr_t bsElementID ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OnSetCursor(bsElementID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IDirectoryHTMLViewCellController::OnLink ( _bstr_t bsID ) {
+    HRESULT _hr = raw_OnLink(bsID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDirectoryHTMLViewCellController::OnClick ( _bstr_t bsElementID ) {
+    HRESULT _hr = raw_OnClick(bsElementID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDirectoryHTMLViewCellController::FillContextMenu ( _bstr_t bsElementID, struct IMenu * pMenu ) {
+    HRESULT _hr = raw_FillContextMenu(bsElementID, pMenu);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IDirectoryHTMLViewCellController::HitTest ( _bstr_t bsElementID, struct IHitTestFill * pHitTestFill ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_HitTest(bsElementID, pHitTestFill, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IStdDirectoryCellCustomController wrapper method implementations
+//
+
+inline HRESULT IStdDirectoryCellCustomController::OnAttachToView ( struct IStdDirectoryCellInfo * pCellInfo ) {
+    HRESULT _hr = raw_OnAttachToView(pCellInfo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IStdDirectoryCellCustomController::OnDetachFromView ( struct IStdDirectoryCellInfo * pCellInfo ) {
+    HRESULT _hr = raw_OnDetachFromView(pCellInfo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IRasterSetPtr IStdDirectoryCellCustomController::GetImages ( enum CellAdditionalContentType nContentType, struct IStdDirectoryCellInfo * pCellInfo ) {
+    struct IRasterSet * _result = 0;
+    HRESULT _hr = raw_GetImages(nContentType, pCellInfo, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterSetPtr(_result, false);
+}
+
+inline _bstr_t IStdDirectoryCellCustomController::MakeAdditionalContent ( enum CellAdditionalContentType nContentType, struct IStdDirectoryCellInfo * pCellInfo, struct IDataRow * pRecord ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_MakeAdditionalContent(nContentType, pCellInfo, pRecord, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline VARIANT_BOOL IStdDirectoryCellCustomController::OnSetCursor ( struct IStdDirectoryCellInfo * pCellInfo, _bstr_t bsElementID ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OnSetCursor(pCellInfo, bsElementID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IStdDirectoryCellCustomController::OnLink ( struct IStdDirectoryCellInfo * pCellInfo, _bstr_t bsID ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OnLink(pCellInfo, bsID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IStdDirectoryCellCustomController::OnClick ( struct IStdDirectoryCellInfo * pCellInfo, _bstr_t bsElementID ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OnClick(pCellInfo, bsElementID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IStdDirectoryCellCustomController::FillContextMenu ( struct IStdDirectoryCellInfo * pCellInfo, _bstr_t bsElementID, struct IMenu * pMenu ) {
+    HRESULT _hr = raw_FillContextMenu(pCellInfo, bsElementID, pMenu);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IStdDirectoryCellCustomController::HitTest ( struct IStdDirectoryCellInfo * pCellInfo, _bstr_t bsElementID, struct IHitTestFill * pHitTestFill ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_HitTest(pCellInfo, bsElementID, pHitTestFill, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IStdDirectoryCustomController wrapper method implementations
+//
+
+inline IStdDirectoryCellCustomControllerPtr IStdDirectoryCustomController::MakeCellController ( struct IStdDirectoryCellInfo * pVal ) {
+    struct IStdDirectoryCellCustomController * _result = 0;
+    HRESULT _hr = raw_MakeCellController(pVal, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IStdDirectoryCellCustomControllerPtr(_result, false);
+}
+
+//
+// interface IDirectoryViewCellFactory wrapper method implementations
+//
+
+inline IDirectoryViewCellPtr IDirectoryViewCellFactory::CreateViewCell ( ) {
+    struct IDirectoryViewCell * _result = 0;
+    HRESULT _hr = raw_CreateViewCell(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDirectoryViewCellPtr(_result, false);
+}
+
+//
+// interface IGrymObjectFactory wrapper method implementations
+//
+
+inline IDevPointPtr IGrymObjectFactory::CreateDevPoint ( long nX, long nY ) {
+    struct IDevPoint * _result = 0;
+    HRESULT _hr = raw_CreateDevPoint(nX, nY, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevPointPtr(_result, false);
+}
+
+inline IDevRectPtr IGrymObjectFactory::CreateDevRect ( long nMinX, long nMinY, long nMaxX, long nMaxY ) {
+    struct IDevRect * _result = 0;
+    HRESULT _hr = raw_CreateDevRect(nMinX, nMinY, nMaxX, nMaxY, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevRectPtr(_result, false);
+}
+
+inline IDevSizePtr IGrymObjectFactory::CreateDevSize ( long nWidth, long nHeight ) {
+    struct IDevSize * _result = 0;
+    HRESULT _hr = raw_CreateDevSize(nWidth, nHeight, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevSizePtr(_result, false);
+}
+
+inline IMapPointPtr IGrymObjectFactory::CreateMapPoint ( double nX, double nY ) {
+    struct IMapPoint * _result = 0;
+    HRESULT _hr = raw_CreateMapPoint(nX, nY, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPointPtr(_result, false);
+}
+
+inline IMapRectPtr IGrymObjectFactory::CreateMapRect ( double nMinX, double nMinY, double nMaxX, double nMaxY ) {
+    struct IMapRect * _result = 0;
+    HRESULT _hr = raw_CreateMapRect(nMinX, nMinY, nMaxX, nMaxY, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapRectPtr(_result, false);
+}
+
+inline IPopupMenuPtr IGrymObjectFactory::CreatePopupMenu ( ) {
+    struct IPopupMenu * _result = 0;
+    HRESULT _hr = raw_CreatePopupMenu(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IPopupMenuPtr(_result, false);
+}
+
+inline ICommandLinePtr IGrymObjectFactory::ParseCommandLine ( _bstr_t bsCmdLine ) {
+    struct ICommandLine * _result = 0;
+    HRESULT _hr = raw_ParseCommandLine(bsCmdLine, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICommandLinePtr(_result, false);
+}
+
+inline IRasterPtr IGrymObjectFactory::CreateRasterFromFile ( _bstr_t bsFileName ) {
+    struct IRaster * _result = 0;
+    HRESULT _hr = raw_CreateRasterFromFile(bsFileName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterPtr(_result, false);
+}
+
+inline IRasterPtr IGrymObjectFactory::CreateRasterFromMemory ( SAFEARRAY * saVal ) {
+    struct IRaster * _result = 0;
+    HRESULT _hr = raw_CreateRasterFromMemory(saVal, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterPtr(_result, false);
+}
+
+inline IRasterPtr IGrymObjectFactory::MakeHighlightedRaster ( struct IRaster * pRaster, OLE_COLOR clrHighlight ) {
+    struct IRaster * _result = 0;
+    HRESULT _hr = raw_MakeHighlightedRaster(pRaster, clrHighlight, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterPtr(_result, false);
+}
+
+inline IRasterSetEditPtr IGrymObjectFactory::CreateRasterSet ( ) {
+    struct IRasterSetEdit * _result = 0;
+    HRESULT _hr = raw_CreateRasterSet(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterSetEditPtr(_result, false);
+}
+
+inline IRasterBagPtr IGrymObjectFactory::CreateRasterBag ( ) {
+    struct IRasterBag * _result = 0;
+    HRESULT _hr = raw_CreateRasterBag(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterBagPtr(_result, false);
+}
+
+inline ISymbolPtr IGrymObjectFactory::CreateSymbol ( enum SymbolType nType ) {
+    struct ISymbol * _result = 0;
+    HRESULT _hr = raw_CreateSymbol(nType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISymbolPtr(_result, false);
+}
+
+inline ISimpleLineSymbolPtr IGrymObjectFactory::CreateSimpleLineSymbol ( enum SimpleLineStyle nStyle, double nWidth, OLE_COLOR clrLine ) {
+    struct ISimpleLineSymbol * _result = 0;
+    HRESULT _hr = raw_CreateSimpleLineSymbol(nStyle, nWidth, clrLine, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISimpleLineSymbolPtr(_result, false);
+}
+
+inline ISimpleFillSymbolPtr IGrymObjectFactory::CreateSimpleFillSymbol ( enum SimpleFillStyle nStyle, OLE_COLOR clrForeground, OLE_COLOR clrBackground, struct ILineSymbol * pBorder ) {
+    struct ISimpleFillSymbol * _result = 0;
+    HRESULT _hr = raw_CreateSimpleFillSymbol(nStyle, clrForeground, clrBackground, pBorder, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISimpleFillSymbolPtr(_result, false);
+}
+
+inline IRasterMarkerSymbolPtr IGrymObjectFactory::CreateRasterMarkerSymbol ( struct IRaster * pRaster, double nScale ) {
+    struct IRasterMarkerSymbol * _result = 0;
+    HRESULT _hr = raw_CreateRasterMarkerSymbol(pRaster, nScale, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterMarkerSymbolPtr(_result, false);
+}
+
+inline ITextSymbolPtr IGrymObjectFactory::CreateTextSymbol ( struct IFont * pFont, OLE_COLOR clrText ) {
+    struct ITextSymbol * _result = 0;
+    HRESULT _hr = raw_CreateTextSymbol(pFont, clrText, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITextSymbolPtr(_result, false);
+}
+
+inline IDirectoryViewCellFactoryPtr IGrymObjectFactory::GetDirectoryHTMLViewCellFactory ( ) {
+    struct IDirectoryViewCellFactory * _result = 0;
+    HRESULT _hr = get_DirectoryHTMLViewCellFactory(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDirectoryViewCellFactoryPtr(_result, false);
+}
+
+inline ICriteriaSetPtr IGrymObjectFactory::CreateCriteriaSet ( struct ICriteriaSet * pToClone ) {
+    struct ICriteriaSet * _result = 0;
+    HRESULT _hr = raw_CreateCriteriaSet(pToClone, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICriteriaSetPtr(_result, false);
+}
+
+inline IDirectoryCriteriaHelperPtr IGrymObjectFactory::CreateDirectoryCriteriaHelper ( struct ICriteriaSet * pCriteria ) {
+    struct IDirectoryCriteriaHelper * _result = 0;
+    HRESULT _hr = raw_CreateDirectoryCriteriaHelper(pCriteria, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDirectoryCriteriaHelperPtr(_result, false);
+}
+
+inline IRasterPtr IGrymObjectFactory::CreateRasterSampleOfSymbol ( struct IDevSize * pSize, struct ISymbol * pSymbol ) {
+    struct IRaster * _result = 0;
+    HRESULT _hr = raw_CreateRasterSampleOfSymbol(pSize, pSymbol, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterPtr(_result, false);
+}
+
+//
+// interface IGrymObjectFactory2 wrapper method implementations
+//
+
+inline IGrymControlPtr IGrymObjectFactory2::CreateGrymControl ( enum GrymControlType nType ) {
+    struct IGrymControl * _result = 0;
+    HRESULT _hr = raw_CreateGrymControl(nType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IGrymControlPtr(_result, false);
+}
+
+inline IRasterBagPtr IGrymObjectFactory2::CreateRasterBagFromMemory ( SAFEARRAY * saVal ) {
+    struct IRasterBag * _result = 0;
+    HRESULT _hr = raw_CreateRasterBagFromMemory(saVal, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterBagPtr(_result, false);
+}
+
+inline IGrymHTMLViewControlPtr IGrymObjectFactory2::CreateGrymHTMLViewControl ( ) {
+    struct IGrymHTMLViewControl * _result = 0;
+    HRESULT _hr = raw_CreateGrymHTMLViewControl(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IGrymHTMLViewControlPtr(_result, false);
+}
+
+inline IShapeFillPtr IGrymObjectFactory2::CreateShape ( ) {
+    struct IShapeFill * _result = 0;
+    HRESULT _hr = raw_CreateShape(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IShapeFillPtr(_result, false);
+}
+
+inline IFeaturePtr IGrymObjectFactory2::CreateFeature ( struct ILayer * pLayer, long nIndex ) {
+    struct IFeature * _result = 0;
+    HRESULT _hr = raw_CreateFeature(pLayer, nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFeaturePtr(_result, false);
+}
+
+//
+// interface IGrymObjectFactory3 wrapper method implementations
+//
+
+inline IPluginStaticLayerPtr IGrymObjectFactory3::CreatePluginStaticLayer ( IUnknown * pProperties ) {
+    struct IPluginStaticLayer * _result = 0;
+    HRESULT _hr = raw_CreatePluginStaticLayer(pProperties, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IPluginStaticLayerPtr(_result, false);
+}
+
+inline IMapDeviceClipPtr IGrymObjectFactory3::CreateMapDeviceClip ( struct IMapDevice * pMapDevice ) {
+    struct IMapDeviceClip * _result = 0;
+    HRESULT _hr = raw_CreateMapDeviceClip(pMapDevice, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapDeviceClipPtr(_result, false);
+}
+
+//
+// interface IDirectoryViewCell wrapper method implementations
+//
+
+inline long IDirectoryViewCell::CalcHeight ( OLE_HANDLE hDC, long nWidth ) {
+    long _result = 0;
+    HRESULT _hr = raw_CalcHeight(hDC, nWidth, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IDirectoryViewCell::Draw ( OLE_HANDLE hDC, struct IDevRect * pLocalDrawBounds ) {
+    HRESULT _hr = raw_Draw(hDC, pLocalDrawBounds);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IDirectoryViewCell::OnSetCursor ( struct IDevPoint * pLocalCursorPosition ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OnSetCursor(pLocalCursorPosition, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IDirectoryViewCell::OnClick ( struct IDevPoint * pLocalClickPosition ) {
+    HRESULT _hr = raw_OnClick(pLocalClickPosition);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDirectoryViewCell::FillContextMenu ( struct IDevPoint * pLocalPosition, struct IMenu * pMenu ) {
+    HRESULT _hr = raw_FillContextMenu(pLocalPosition, pMenu);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDirectoryViewCellControllerPtr IDirectoryViewCell::GetController ( ) {
+    struct IDirectoryViewCellController * _result = 0;
+    HRESULT _hr = get_Controller(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDirectoryViewCellControllerPtr(_result, false);
+}
+
+inline void IDirectoryViewCell::PutRefController ( struct IDirectoryViewCellController * pVal ) {
+    HRESULT _hr = putref_Controller(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDirectoryViewPtr IDirectoryViewCell::GetView ( ) {
+    struct IDirectoryView * _result = 0;
+    HRESULT _hr = get_View(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDirectoryViewPtr(_result, false);
+}
+
+inline void IDirectoryViewCell::PutRefView ( struct IDirectoryView * pVal ) {
+    HRESULT _hr = putref_View(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IDirectoryViewCell::HitTest ( struct IDevPoint * pLocalCursorPosition, struct IHitTestFill * pFill ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_HitTest(pLocalCursorPosition, pFill, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IDirectoryViewCellController wrapper method implementations
+//
+
+inline HRESULT IDirectoryViewCellController::OnAttach ( struct IDirectoryViewCell * pCell ) {
+    HRESULT _hr = raw_OnAttach(pCell);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDirectoryViewCellController::OnDetach ( ) {
+    HRESULT _hr = raw_OnDetach();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IDirectoryView wrapper method implementations
+//
+
+inline HRESULT IDirectoryView::OnCellChanged ( struct IDirectoryViewCell * pVal ) {
+    HRESULT _hr = raw_OnCellChanged(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDirectoryView::EnsureVisible ( struct IDirectoryViewCell * pVal ) {
+    HRESULT _hr = raw_EnsureVisible(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDirectoryView::InvalidateView ( ) {
+    HRESULT _hr = raw_InvalidateView();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IDirectorySearchCursor wrapper method implementations
+//
+
+inline IDirectoryViewCellControllerPtr IDirectorySearchCursor::Next ( ) {
+    struct IDirectoryViewCellController * _result = 0;
+    HRESULT _hr = raw_Next(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDirectoryViewCellControllerPtr(_result, false);
+}
+
+//
+// interface IDirectoryCustom wrapper method implementations
+//
+
+inline VARIANT_BOOL IDirectoryCustom::CanRemove ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_CanRemove(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IDirectoryCustom::GetMinWidth ( ) {
+    long _result = 0;
+    HRESULT _hr = get_MinWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IDirectoryViewCellFactoryPtr IDirectoryCustom::GetViewCellFactory ( ) {
+    struct IDirectoryViewCellFactory * _result = 0;
+    HRESULT _hr = get_ViewCellFactory(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDirectoryViewCellFactoryPtr(_result, false);
+}
+
+inline IDirectorySearchCursorPtr IDirectoryCustom::Search ( struct ICriteriaSet * pCriteria ) {
+    struct IDirectorySearchCursor * _result = 0;
+    HRESULT _hr = raw_Search(pCriteria, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDirectorySearchCursorPtr(_result, false);
+}
+
+//
+// interface IBaseViewThread wrapper method implementations
+//
+
+inline IBaseReferencePtr IBaseViewThread::GetBaseReference ( ) {
+    struct IBaseReference * _result = 0;
+    HRESULT _hr = get_BaseReference(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IBaseReferencePtr(_result, false);
+}
+
+inline HRESULT IBaseViewThread::Activate ( long nCmdShow ) {
+    HRESULT _hr = raw_Activate(nCmdShow);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IBaseViewThread::ExecuteCommandLine ( struct ICommandLine * pCmdLine ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_ExecuteCommandLine(pCmdLine, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline IGrymObjectFactoryPtr IBaseViewThread::GetFactory ( ) {
+    struct IGrymObjectFactory * _result = 0;
+    HRESULT _hr = get_Factory(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IGrymObjectFactoryPtr(_result, false);
+}
+
+inline IPluginManagerPtr IBaseViewThread::GetPluginManager ( ) {
+    struct IPluginManager * _result = 0;
+    HRESULT _hr = get_PluginManager(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IPluginManagerPtr(_result, false);
+}
+
+inline IDatabasePtr IBaseViewThread::GetDatabase ( ) {
+    struct IDatabase * _result = 0;
+    HRESULT _hr = get_Database(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDatabasePtr(_result, false);
+}
+
+inline IBaseViewFramePtr IBaseViewThread::GetFrame ( ) {
+    struct IBaseViewFrame * _result = 0;
+    HRESULT _hr = get_Frame(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IBaseViewFramePtr(_result, false);
+}
+
+//
+// interface IGrym wrapper method implementations
+//
+
+inline DATE IGrym::GetIssueDate ( ) {
+    DATE _result = 0;
+    HRESULT _hr = get_IssueDate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline DATE IGrym::GetMinBaseDate ( ) {
+    DATE _result = 0;
+    HRESULT _hr = get_MinBaseDate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IBaseCollectionPtr IGrym::GetBaseCollection ( ) {
+    struct IBaseCollection * _result = 0;
+    HRESULT _hr = get_BaseCollection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IBaseCollectionPtr(_result, false);
+}
+
+inline IBaseViewThreadPtr IGrym::GetBaseView ( struct IBaseReference * pBaseRef, VARIANT_BOOL bRun, VARIANT_BOOL bAllowChangeFromUI ) {
+    struct IBaseViewThread * _result = 0;
+    HRESULT _hr = raw_GetBaseView(pBaseRef, bRun, bAllowChangeFromUI, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IBaseViewThreadPtr(_result, false);
+}
+
+inline long IGrym::GetProcessId ( ) {
+    long _result = 0;
+    HRESULT _hr = get_ProcessId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline OLE_HANDLE IGrym::GetMarkerWindow ( ) {
+    OLE_HANDLE _result;
+    HRESULT _hr = get_MarkerWindow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t IGrym::ExecuteCommandLine ( struct ICommandLine * pCmdLine ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_ExecuteCommandLine(pCmdLine, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface IGrymPlugin wrapper method implementations
+//
+
+inline HRESULT IGrymPlugin::Initialize ( struct IGrym * pRoot, struct IBaseViewThread * pBaseView ) {
+    HRESULT _hr = raw_Initialize(pRoot, pBaseView);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGrymPlugin::Terminate ( ) {
+    HRESULT _hr = raw_Terminate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IPluginManager wrapper method implementations
+//
+
+inline IGrymPluginPtr IPluginManager::GetPlugin ( _bstr_t bsTag ) {
+    struct IGrymPlugin * _result = 0;
+    HRESULT _hr = get_Plugin(bsTag, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IGrymPluginPtr(_result, false);
+}
+
+//
+// interface IBaseViewFrame wrapper method implementations
+//
+
+inline OLE_HANDLE IBaseViewFrame::GetHWindow ( ) {
+    OLE_HANDLE _result;
+    HRESULT _hr = get_HWindow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IMapPtr IBaseViewFrame::GetMap ( ) {
+    struct IMap * _result = 0;
+    HRESULT _hr = get_Map(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPtr(_result, false);
+}
+
+inline IAcceleratorTablePtr IBaseViewFrame::GetAcceleratorTable ( ) {
+    struct IAcceleratorTable * _result = 0;
+    HRESULT _hr = get_AcceleratorTable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAcceleratorTablePtr(_result, false);
+}
+
+inline IRibbonBarPtr IBaseViewFrame::GetMainRibbonBar ( ) {
+    struct IRibbonBar * _result = 0;
+    HRESULT _hr = get_MainRibbonBar(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRibbonBarPtr(_result, false);
+}
+
+inline ICustomPageCollectionPtr IBaseViewFrame::GetCustomPageCollection ( ) {
+    struct ICustomPageCollection * _result = 0;
+    HRESULT _hr = get_CustomPageCollection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICustomPageCollectionPtr(_result, false);
+}
+
+inline IDirectoryCollectionPtr IBaseViewFrame::GetDirectoryCollection ( ) {
+    struct IDirectoryCollection * _result = 0;
+    HRESULT _hr = get_DirectoryCollection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDirectoryCollectionPtr(_result, false);
+}
+
+inline IContextBasePtr IBaseViewFrame::GetExecContext ( ) {
+    struct IContextBase * _result = 0;
+    HRESULT _hr = get_ExecContext(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IContextBasePtr(_result, false);
+}
+
+inline enum BaseFrameViewMode IBaseViewFrame::GetViewMode ( ) {
+    enum BaseFrameViewMode _result;
+    HRESULT _hr = get_ViewMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IBaseViewFrame2 wrapper method implementations
+//
+
+inline IDataRowPtr IBaseViewFrame2::ShowRubricator ( _bstr_t bsInitial ) {
+    struct IDataRow * _result = 0;
+    HRESULT _hr = raw_ShowRubricator(bsInitial, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDataRowPtr(_result, false);
+}
+
+inline ILegendPtr IBaseViewFrame2::GetLegend ( ) {
+    struct ILegend * _result = 0;
+    HRESULT _hr = get_Legend(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ILegendPtr(_result, false);
+}
+
+//
+// interface IMap wrapper method implementations
+//
+
+inline IMapRectPtr IMap::GetFullExtent ( ) {
+    struct IMapRect * _result = 0;
+    HRESULT _hr = get_FullExtent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapRectPtr(_result, false);
+}
+
+inline HRESULT IMap::ShowFullExtent ( ) {
+    HRESULT _hr = raw_ShowFullExtent();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMap::Invalidate ( VARIANT_BOOL bForceRedraw ) {
+    HRESULT _hr = raw_Invalidate(bForceRedraw);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMap::ShowPos ( struct IMapPoint * pPtMap, long nScale, VARIANT_BOOL bFlash, VARIANT_BOOL bDisableFly ) {
+    HRESULT _hr = raw_ShowPos(pPtMap, nScale, bFlash, bDisableFly);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMap::SetMapVisibleRect ( struct IMapRect * newVal, VARIANT_BOOL bDisableFly ) {
+    HRESULT _hr = raw_SetMapVisibleRect(newVal, bDisableFly);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IMapRectPtr IMap::GetMapVisibleRect ( ) {
+    struct IMapRect * _result = 0;
+    HRESULT _hr = raw_GetMapVisibleRect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapRectPtr(_result, false);
+}
+
+inline OLE_HANDLE IMap::GetHWindow ( ) {
+    OLE_HANDLE _result;
+    HRESULT _hr = get_HWindow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ILayerCollectionPtr IMap::GetLayers ( ) {
+    struct ILayerCollection * _result = 0;
+    HRESULT _hr = get_Layers(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ILayerCollectionPtr(_result, false);
+}
+
+inline IMapToolsPtr IMap::GetTools ( ) {
+    struct IMapTools * _result = 0;
+    HRESULT _hr = get_Tools(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapToolsPtr(_result, false);
+}
+
+inline IPopupMenuPtr IMap::GetContextMenu ( ) {
+    struct IPopupMenu * _result = 0;
+    HRESULT _hr = get_ContextMenu(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IPopupMenuPtr(_result, false);
+}
+
+inline HRESULT IMap::CopyMap ( struct IDevRect * pSource, OLE_HANDLE hDCDest, struct IDevPoint * pDest ) {
+    HRESULT _hr = raw_CopyMap(pSource, hDCDest, pDest);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IUnknownPtr IMap::GetCoordinateTransformation ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get_CoordinateTransformation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline IMapInfoControllersPtr IMap::GetMapInfoControllers ( ) {
+    struct IMapInfoControllers * _result = 0;
+    HRESULT _hr = get_MapInfoControllers(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapInfoControllersPtr(_result, false);
+}
+
+inline ISelectionPtr IMap::GetSelection ( _bstr_t bsTag, VARIANT_BOOL bForceCreate ) {
+    struct ISelection * _result = 0;
+    HRESULT _hr = raw_GetSelection(bsTag, bForceCreate, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISelectionPtr(_result, false);
+}
+
+//
+// interface ILayerCollection wrapper method implementations
+//
+
+inline HRESULT ILayerCollection::AddLayer ( struct ILayer * pVal ) {
+    HRESULT _hr = raw_AddLayer(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ILayerCollection::RemoveLayer ( struct ILayer * pVal ) {
+    HRESULT _hr = raw_RemoveLayer(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ILayerPtr ILayerCollection::FindLayer ( _bstr_t bsTag ) {
+    struct ILayer * _result = 0;
+    HRESULT _hr = raw_FindLayer(bsTag, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ILayerPtr(_result, false);
+}
+
+inline IMapInfoLayerPtr ILayerCollection::GetMapInfoLayer ( struct IGrymLayer * pLayer ) {
+    struct IMapInfoLayer * _result = 0;
+    HRESULT _hr = get_MapInfoLayer(pLayer, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapInfoLayerPtr(_result, false);
+}
+
+//
+// interface IMapInfoLayer wrapper method implementations
+//
+
+inline HRESULT IMapInfoLayer::Register ( struct IMapInfoLayerBlock * pVal ) {
+    HRESULT _hr = raw_Register(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMapInfoLayer::Unregister ( struct IMapInfoLayerBlock * pVal ) {
+    HRESULT _hr = raw_Unregister(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMapInfoLayerBlock wrapper method implementations
+//
+
+inline HRESULT IMapInfoLayerBlock::SetFiller ( struct IMapInfoLayerFiller * pVal ) {
+    HRESULT _hr = raw_SetFiller(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IMapInfoControllerPtr IMapInfoLayerBlock::GetMapInfoController ( ) {
+    struct IMapInfoController * _result = 0;
+    HRESULT _hr = get_MapInfoController(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapInfoControllerPtr(_result, false);
+}
+
+inline VARIANT_BOOL IMapInfoLayerBlock::GetVisibleState ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_VisibleState(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMapInfoLayerBlock::PutVisibleState ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_VisibleState(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IMapInfoController wrapper method implementations
+//
+
+inline VARIANT_BOOL IMapInfoController::Check ( struct IFeature * pFeature ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_Check(pFeature, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IMapInfoController::GetTitle ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Title(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IMapInfoController::Fill ( struct IFeature * pFeature, struct ICalloutTab * pTab ) {
+    HRESULT _hr = raw_Fill(pFeature, pTab);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMapInfoController::OnTabAction ( struct ICalloutTab * pTab, _bstr_t bsActionID ) {
+    HRESULT _hr = raw_OnTabAction(pTab, bsActionID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMapInfoControllers wrapper method implementations
+//
+
+inline HRESULT IMapInfoControllers::AddController ( struct IMapInfoController * pController ) {
+    HRESULT _hr = raw_AddController(pController);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMapInfoControllers::RemoveController ( struct IMapInfoController * pController ) {
+    HRESULT _hr = raw_RemoveController(pController);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMapInfoControllers2 wrapper method implementations
+//
+
+inline IMapInfoControllerPtr IMapInfoControllers2::FindMapInfoController ( _bstr_t bsTag ) {
+    struct IMapInfoController * _result = 0;
+    HRESULT _hr = raw_FindMapInfoController(bsTag, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapInfoControllerPtr(_result, false);
+}
+
+//
+// interface ICalloutTab wrapper method implementations
+//
+
+inline ICalloutPtr ICalloutTab::GetCallout ( ) {
+    struct ICallout * _result = 0;
+    HRESULT _hr = get_Callout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalloutPtr(_result, false);
+}
+
+inline _bstr_t ICalloutTab::GetText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ICalloutTab::PutText ( _bstr_t pVal ) {
+    HRESULT _hr = put_Text(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ICalloutTab::GetTitle ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Title(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ICalloutTab::PutTitle ( _bstr_t pVal ) {
+    HRESULT _hr = put_Title(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ICalloutTab::GetAttribute ( _bstr_t bsElementID, _bstr_t bsAttrName ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Attribute(bsElementID, bsAttrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ICalloutTab::PutAttribute ( _bstr_t bsElementID, _bstr_t bsAttrName, _bstr_t pVal ) {
+    HRESULT _hr = put_Attribute(bsElementID, bsAttrName, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IUnknownPtr ICalloutTab::GetTitleIcon ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get_TitleIcon(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline void ICalloutTab::PutRefTitleIcon ( IUnknown * pVal ) {
+    HRESULT _hr = putref_TitleIcon(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IRasterSetPtr ICalloutTab::GetImages ( ) {
+    struct IRasterSet * _result = 0;
+    HRESULT _hr = get_Images(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRasterSetPtr(_result, false);
+}
+
+inline void ICalloutTab::PutRefImages ( struct IRasterSet * pVal ) {
+    HRESULT _hr = putref_Images(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ICalloutTab::GetStyleAttribute ( _bstr_t bsElementID, _bstr_t bsAttrName ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StyleAttribute(bsElementID, bsAttrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ICalloutTab::PutStyleAttribute ( _bstr_t bsElementID, _bstr_t bsAttrName, _bstr_t pVal ) {
+    HRESULT _hr = put_StyleAttribute(bsElementID, bsAttrName, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ICalloutTab::EnsureVisible ( _bstr_t bsElementID ) {
+    HRESULT _hr = raw_EnsureVisible(bsElementID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ICallout wrapper method implementations
+//
+
+inline VARIANT_BOOL ICallout::GetAutoClose ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AutoClose(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICallout::PutAutoClose ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AutoClose(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IMapPointPtr ICallout::GetAnchor ( ) {
+    struct IMapPoint * _result = 0;
+    HRESULT _hr = raw_GetAnchor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMapPointPtr(_result, false);
+}
+
+inline IDevPointPtr ICallout::GetVector ( ) {
+    struct IDevPoint * _result = 0;
+    HRESULT _hr = raw_GetVector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevPointPtr(_result, false);
+}
+
+inline IDevSizePtr ICallout::GetSize ( ) {
+    struct IDevSize * _result = 0;
+    HRESULT _hr = raw_GetSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevSizePtr(_result, false);
+}
+
+inline VARIANT_BOOL ICallout::IsMapPointInside ( struct IMapPoint * pPt ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsMapPointInside(pPt, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICallout::AddStandardButton ( enum CalloutStandardButtonType nType ) {
+    long _result = 0;
+    HRESULT _hr = raw_AddStandardButton(nType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICallout::AddButton ( struct IRaster * pBmpNormal ) {
+    long _result = 0;
+    HRESULT _hr = raw_AddButton(pBmpNormal, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICallout::AddCheckButton ( struct IRaster * pBmpNormal, struct IRaster * pBmpChecked, VARIANT_BOOL bInitiallyChecked ) {
+    long _result = 0;
+    HRESULT _hr = raw_AddCheckButton(pBmpNormal, pBmpChecked, bInitiallyChecked, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ICallout::GetButtonChecked ( long nIndex ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ButtonChecked(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICallout::PutButtonChecked ( long nIndex, VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ButtonChecked(nIndex, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ICallout::GetTitle ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Title(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ICallout::PutTitle ( _bstr_t pVal ) {
+    HRESULT _hr = put_Title(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ICalloutTabPtr ICallout::AddTab ( _bstr_t tabTitle ) {
+    struct ICalloutTab * _result = 0;
+    HRESULT _hr = raw_AddTab(tabTitle, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalloutTabPtr(_result, false);
+}
+
+inline VARIANT_BOOL ICallout::RemoveTab ( struct ICalloutTab * pTab ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_RemoveTab(pTab, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ICalloutTabPtr ICallout::InsertTab ( struct ICalloutTab * pAfterTab, _bstr_t tabTitle ) {
+    struct ICalloutTab * _result = 0;
+    HRESULT _hr = raw_InsertTab(pAfterTab, tabTitle, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalloutTabPtr(_result, false);
+}
+
+inline ICalloutTabPtr ICallout::GetActiveTab ( ) {
+    struct ICalloutTab * _result = 0;
+    HRESULT _hr = get_ActiveTab(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalloutTabPtr(_result, false);
+}
+
+inline void ICallout::PutRefActiveTab ( struct ICalloutTab * pTab ) {
+    HRESULT _hr = putref_ActiveTab(pTab);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ICallout::GetCustomData ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_CustomData(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ICallout::PutCustomData ( const _variant_t & pVal ) {
+    HRESULT _hr = put_CustomData(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ICalloutTab2 wrapper method implementations
+//
+
+inline HRESULT ICalloutTab2::ModifyHTML ( _bstr_t bsElementID, enum HTMLModificationType mtVal, _bstr_t bsVal ) {
+    HRESULT _hr = raw_ModifyHTML(bsElementID, mtVal, bsVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ICalloutTab3 wrapper method implementations
+//
+
+inline _bstr_t ICalloutTab3::GetDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Description(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ICalloutTab3::PutDescription ( _bstr_t pVal ) {
+    HRESULT _hr = put_Description(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IMapGraphics wrapper method implementations
+//
+
+inline ICalloutPtr IMapGraphics::CreateCallout ( struct IMapPoint * pPtAnchor, VARIANT_BOOL bAutoClose, struct IDevPoint * pVector, struct IDevSize * pSize ) {
+    struct ICallout * _result = 0;
+    HRESULT _hr = raw_CreateCallout(pPtAnchor, bAutoClose, pVector, pSize, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalloutPtr(_result, false);
+}
+
+inline HRESULT IMapGraphics::AddGraphic ( struct IGraphicBase * pGraphic ) {
+    HRESULT _hr = raw_AddGraphic(pGraphic);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMapGraphics::RemoveGraphic ( struct IGraphicBase * pGraphic ) {
+    HRESULT _hr = raw_RemoveGraphic(pGraphic);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMapGraphics::BringToFront ( struct IGraphicBase * pGraphic, VARIANT_BOOL bRedraw ) {
+    HRESULT _hr = raw_BringToFront(pGraphic, bRedraw);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMapGraphics::SendToBack ( struct IGraphicBase * pGraphic, VARIANT_BOOL bRedraw ) {
+    HRESULT _hr = raw_SendToBack(pGraphic, bRedraw);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IMapGraphics::GetGraphicCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_GraphicCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IGraphicBasePtr IMapGraphics::GetGraphicByIndex ( long nIndex ) {
+    struct IGraphicBase * _result = 0;
+    HRESULT _hr = get_GraphicByIndex(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IGraphicBasePtr(_result, false);
+}
+
+inline IGraphicBasePtr IMapGraphics::GetGraphicByPosition ( struct IMapPoint * pPosition ) {
+    struct IGraphicBase * _result = 0;
+    HRESULT _hr = get_GraphicByPosition(pPosition, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IGraphicBasePtr(_result, false);
+}
+
+inline IGraphicBasePtr IMapGraphics::GetGraphicByTag ( _bstr_t bsTag ) {
+    struct IGraphicBase * _result = 0;
+    HRESULT _hr = get_GraphicByTag(bsTag, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IGraphicBasePtr(_result, false);
+}
+
+//
+// interface IMap2 wrapper method implementations
+//
+
+inline ICalloutPtr IMap2::CreateInfoCard ( struct IFeature * pIdentifySource ) {
+    struct ICallout * _result = 0;
+    HRESULT _hr = raw_CreateInfoCard(pIdentifySource, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalloutPtr(_result, false);
+}

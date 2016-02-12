@@ -1,0 +1,69 @@
+# Project: export
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = dllmain.o ExtendedInfoBlock.o GrymApiBase.o OrgDataRowFilter.o OrgDirectoryCustomController.o OrgSearchControl.o PluginImpl.o PluginInfo.o SpatialFilter.o stdafx.o Util.o Wildcard.o CmdExport.o DlgExport.o
+LINKOBJ  = dllmain.o ExtendedInfoBlock.o GrymApiBase.o OrgDataRowFilter.o OrgDirectoryCustomController.o OrgSearchControl.o PluginImpl.o PluginInfo.o SpatialFilter.o stdafx.o Util.o Wildcard.o CmdExport.o DlgExport.o
+LIBS     = -L"D:/DevTools/Dev-Cpp/MinGW64/lib32" -L"D:/DevTools/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -L"D:/jim/2gis-export-plugin/WTL/Include" -m32 -g3
+INCS     = -I"D:/DevTools/Dev-Cpp/MinGW64/include" -I"D:/DevTools/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/DevTools/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/jim/2gis-export-plugin/WTL/Include"
+CXXINCS  = -I"D:/DevTools/Dev-Cpp/MinGW64/include" -I"D:/DevTools/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/DevTools/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/DevTools/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"D:/jim/2gis-export-plugin/WTL/Include" -I"D:/jim/2gis-export-plugin/WTL/Include"
+BIN      = ../bin/export.dll
+CXXFLAGS = $(CXXINCS) -m32 -g3 -DBUILDING_DLL=1
+CFLAGS   = $(INCS) -m32 -g3 -DBUILDING_DLL=1
+RM       = rm.exe -f
+DEF      = ../bin/libexport.def
+STATIC   = ../bin/libexport.a
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN) $(DEF) $(STATIC)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) -shared $(LINKOBJ) -o $(BIN) $(LIBS) -Wl,--output-def,$(DEF),--out-implib,$(STATIC),--add-stdcall-alias
+
+dllmain.o: dllmain.cpp
+	$(CPP) -c dllmain.cpp -o dllmain.o $(CXXFLAGS)
+
+ExtendedInfoBlock.o: ExtendedInfoBlock.cpp
+	$(CPP) -c ExtendedInfoBlock.cpp -o ExtendedInfoBlock.o $(CXXFLAGS)
+
+GrymApiBase.o: GrymApiBase.cpp
+	$(CPP) -c GrymApiBase.cpp -o GrymApiBase.o $(CXXFLAGS)
+
+OrgDataRowFilter.o: OrgDataRowFilter.cpp
+	$(CPP) -c OrgDataRowFilter.cpp -o OrgDataRowFilter.o $(CXXFLAGS)
+
+OrgDirectoryCustomController.o: OrgDirectoryCustomController.cpp
+	$(CPP) -c OrgDirectoryCustomController.cpp -o OrgDirectoryCustomController.o $(CXXFLAGS)
+
+OrgSearchControl.o: OrgSearchControl.cpp
+	$(CPP) -c OrgSearchControl.cpp -o OrgSearchControl.o $(CXXFLAGS)
+
+PluginImpl.o: PluginImpl.cpp
+	$(CPP) -c PluginImpl.cpp -o PluginImpl.o $(CXXFLAGS)
+
+PluginInfo.o: PluginInfo.cpp
+	$(CPP) -c PluginInfo.cpp -o PluginInfo.o $(CXXFLAGS)
+
+SpatialFilter.o: SpatialFilter.cpp
+	$(CPP) -c SpatialFilter.cpp -o SpatialFilter.o $(CXXFLAGS)
+
+stdafx.o: stdafx.cpp
+	$(CPP) -c stdafx.cpp -o stdafx.o $(CXXFLAGS)
+
+Util.o: Util.cpp
+	$(CPP) -c Util.cpp -o Util.o $(CXXFLAGS)
+
+Wildcard.o: Wildcard.cpp
+	$(CPP) -c Wildcard.cpp -o Wildcard.o $(CXXFLAGS)
+
+CmdExport.o: CmdExport.cpp
+	$(CPP) -c CmdExport.cpp -o CmdExport.o $(CXXFLAGS)
+
+DlgExport.o: DlgExport.cpp
+	$(CPP) -c DlgExport.cpp -o DlgExport.o $(CXXFLAGS)
