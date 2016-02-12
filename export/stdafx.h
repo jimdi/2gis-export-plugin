@@ -23,4 +23,5 @@
 #include <atldlgs.h>
 
 // 2gis
-#import "libid:7AA02C95-0B4A-43aa-92D8-BA40511A7F3F" rename("RemoveDirectory", "GrymRemoveDirectory")
+//#import "libid:7AA02C95-0B4A-43aa-92D8-BA40511A7F3F" rename("RemoveDirectory", "GrymRemoveDirectory")
+#include <grym.tlh>
